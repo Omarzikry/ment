@@ -1,0 +1,20 @@
+.slider{
+    width: 80%;
+    height: 300px;
+    position: relative;
+    background-color: aqua;
+    overflow-x: hidden;
+    left: 10%;
+    top: 100px;
+}
+
+@media only screen and (min-width:768px){
+    .slider{
+        width: 800px;
+        height: 500px;
+        position: relative;
+        background-color: aqua;
+        overflow-x: hidden;
+        left: 300px;
+    }
+}

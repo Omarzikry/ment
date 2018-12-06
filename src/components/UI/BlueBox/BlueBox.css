@@ -1,0 +1,6 @@
+.BlueBox{
+    background: linear-gradient(-135deg, #b4d3d3, #d9e7e7);
+    position: absolute;
+    display: block;
+    z-index: -1
+}

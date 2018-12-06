@@ -1,0 +1,9 @@
+.Navlink{
+    margin: 0 1em;
+    text-decoration: none;
+    font-family: Nunito,sans-serif;
+    font-weight: 900;
+    color: #1a1a1d;
+    font-size: 14px;
+    text-transform: uppercase;
+}
