@@ -1,29 +1,83 @@
 .slider{
-    width: 80%;
-    height: 300px;
     position: relative;
     background-color: white;
     overflow-x: hidden;
+}
+.carouselContainer{
+    position: relative;
+    width: 80%;
+    height: 300px;
     left: 10%;
     top: 100px;
 }
+.text{
+    position: absolute;
+    left: -30px;
+    top: 20%;
+    z-index: 9;
+}
+.carouselContainer h2{
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: normal;
+    text-transform: capitalize;
+    letter-spacing: 2px
+}
+.carouselContainer h3{
+    font-size: 7px;
+    font-family: Nunito;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px
+}
 @media only screen and (min-width:768px){
-    .slider{
-        width: 80%;
+    .carouselContainer{
         height: 500px;
-        position: relative;
-        background-color: white;
-        overflow-x: hidden;
-        left: 10%;
+    }
+    .text{
+        left: -30px;
+        top: 20%;
+        z-index: 9;
+    }
+    .carouselContainer h2{
+        font-size: 40px;
+        font-family: Poppins;
+        font-weight: normal;
+        text-transform: capitalize;
+        letter-spacing: 2px
+    }
+    .carouselContainer h3{
+        font-size: 14px;
+        font-family: Nunito;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 4px
     }
 }
 @media only screen and (min-width:1200px){
-    .slider{
+    .carouselContainer{
         width: 900px;
         height: 600px;
-        position: relative;
-        background-color: white;
-        overflow-x: hidden;
         left: 200px;
+    }
+    .text{
+        position: absolute;
+        left: -60px;
+        top: 30%;
+        z-index: 9;
+    }
+    .carouselContainer h2{
+        font-size: 70px;
+        font-family: Poppins;
+        font-weight: normal;
+        text-transform: capitalize;
+        letter-spacing: 2px
+    }
+    .carouselContainer h3{
+        font-size: 14px;
+        font-family: Nunito;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 4px
     }
 }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import classes from "./Carousel.css";
 import Slide from './Slide/Slide';
-import LeftArrow from './Arrows/LeftArrow';
-import RightArrow from './Arrows/RightArrow';
+//import LeftArrow from './Arrows/LeftArrow';
+//import RightArrow from './Arrows/RightArrow';
 import axios from '../../../axiosCarouselImages';
 import Spinner from '../Spinner/Spinner';
 class Carousel extends Component {
@@ -101,12 +101,18 @@ class Carousel extends Component {
             })
         }
         return (
-            <div className={classes.slider}>
+            <div className={classes.carouselContainer}>
+                <div className={classes.text}>
+                <h2>Maia <br /> Anderson</h2>
+                <h3>British Model</h3>
+                </div>
+                <div className={classes.slider}>
                 <div className="slider-wrapper" style={{ transform: `translateX(${this.state.translateValue}px)`, transition: 'transform ease-out 0.45s', display: 'flex', width: '100%', height: '100%', position: 'relative' }}>
                     {images}
                 </div>
-                <LeftArrow click={this.goToPrevSlide} />
-                <RightArrow click={this.goToNextSlide} />
+                {/* <LeftArrow click={this.goToPrevSlide} />
+                <RightArrow click={this.goToNextSlide} /> */}
+            </div>
             </div>
         );
     }
