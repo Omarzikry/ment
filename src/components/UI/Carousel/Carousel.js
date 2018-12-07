@@ -12,8 +12,6 @@ class Carousel extends Component {
         currentIndex: 0,
         translateValue: 0,
         loading: true,
-        autoplay: true,
-        interval: 0
     }
 
     // ============ GET THE DATA AFTER COMPONENT IS MOUNTED ============ //
