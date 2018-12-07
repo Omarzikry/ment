@@ -18,7 +18,7 @@ const slideImg = {
 
 const Slide = (props) => {
 
-  return <div className="slide" style={{...slide}}><img style={slideImg} src={props.src} alt="" /></div>
+  return <div className="slide" style={{...slide}}><img style={slideImg} src={props.src} alt={props.alt} /></div>
 
 }
 
