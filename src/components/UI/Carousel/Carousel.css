@@ -2,6 +2,7 @@
     position: relative;
     background-color: white;
     overflow-x: hidden;
+    height: 100%;
 }
 .carouselContainer{
     position: relative;
@@ -28,7 +29,7 @@
     font-family: Nunito;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 4px
+    letter-spacing: 1px
 }
 @media only screen and (min-width:768px){
     .carouselContainer{

@@ -5,6 +5,8 @@ import Slide from './Slide/Slide';
 //import RightArrow from './Arrows/RightArrow';
 import axios from '../../../axiosCarouselImages';
 import Spinner from '../Spinner/Spinner';
+import Button from '../Button/Button';
+import playImg from '../../../assets/images/play.png'
 class Carousel extends Component {
 
     state = {
@@ -13,6 +15,7 @@ class Carousel extends Component {
         translateValue: 0,
         loading: true,
     }
+
 
     // ============ GET THE DATA AFTER COMPONENT IS MOUNTED ============ //
 
@@ -113,6 +116,7 @@ class Carousel extends Component {
                 {/* <LeftArrow click={this.goToPrevSlide} />
                 <RightArrow click={this.goToNextSlide} /> */}
             </div>
+            <Button btnType="outFrame" iconSrc={playImg}>VIEW PROFILE</Button>
             </div>
         );
     }
