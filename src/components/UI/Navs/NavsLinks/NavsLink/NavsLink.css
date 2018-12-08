@@ -1,0 +1,34 @@
+.NavBtn{
+    background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+    outline: inherit;
+    color: #696970;
+    text-transform: uppercase;
+    font-family: Nunito,sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    position: relative;
+    display: block;
+    width: 100%;
+    transition: all 0.4s ease
+}
+
+.active{
+    color: #1a1a1d;
+    font-weight: 900;
+    transition: all 0.4s ease
+}
+.active:after{
+    content: "";
+    height: 1.5px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-radius: 2px;
+    background-color: #1a1a1d;
+    transition: all 0.4s ease
+
+}

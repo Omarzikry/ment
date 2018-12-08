@@ -3,6 +3,7 @@ import './normalize.css';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter } from "react-router-dom"
 import Carousel from './components/UI/Carousel/Carousel';
+import NavsTabs from './components/UI/Navs/NavsTabs/NavsTabs';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Carousel/>
+        <NavsTabs />
       </div>
       </BrowserRouter>
     );
