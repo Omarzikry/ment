@@ -2,7 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     height: 6em;
+}
+
+@media only screen and (min-width: 768px){
+    .NavsLinks{
+        width: 30%
+    }
 }

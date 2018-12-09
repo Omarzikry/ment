@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from '../../../../axiosCarouselImages';
 import NavsLink from './NavsLink/NavsLink';
-import classes from './NavsLinks.css'
+import classes from './NavsLinks.css';
 class NavsLinks extends Component {
     state = {
         categories: null,
@@ -12,16 +12,17 @@ class NavsLinks extends Component {
         axios.get('/categories.json')
             .then(res => {
                 this.setState({categories: res.data , loading: false})
-            })
+            });          
     }
-    componentDidUpdate(){
+    componentDidUpdate(prevProps , prevState){
         if(this.state.active !== true){
             this.setState({active: true})
         }
     }
     handleClick = (index , elm) => {
-        console.log(index , elm);
-        this.setState({selected: elm})
+        //console.log(index , elm);
+        this.props.callbackFromParent(elm)
+        this.setState({selected: elm});
     }
     render() {
         let categories = null;
