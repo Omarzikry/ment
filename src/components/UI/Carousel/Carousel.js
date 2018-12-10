@@ -117,19 +117,29 @@ class Carousel extends Component {
     }
 
     render() {
+        // ========= render images ===========//
         let images = <Spinner />
         if (this.state.loading !== true) {
             images = this.state.images.map(image => {
                 return <Slide src={image[1].url} alt={image[1].alt} key={image[0]} />
             })
         }
+        // ========= render text ===========//
+        let text = null;
+        if(this.state.loading !== true){
+            text = this.state.images.map(image => {
+                return(
+                <div className={classes.text} key={image}>
+                <h2>{image[1].firstName}<br />{image[1].lastName}</h2>
+                <h3>{image[1].job}</h3>
+                </div>
+                );
+            })
+        }
         return (
             <div className={classes.carouselContainer}>
                 <ActiveDots currentIndex={this.state.currentIndex} imagesNumber={this.state.images.length} loading={!this.state.loading} callIndex={this.recieveIndex}/>
-                <div className={classes.text}>
-                <h2>Maia<br />Anderson</h2>
-                <h3>british model</h3>
-                </div>
+                {text}
                 <div className={classes.slider}>
                 <div className="slider-wrapper" style={{ transform: `translateX(${this.state.translateValue}px)`, transition: 'transform ease-out 0.45s', display: 'flex', width: '100%', height: '100%', position: 'relative' }}>
                     {images}

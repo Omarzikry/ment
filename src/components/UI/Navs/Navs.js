@@ -23,7 +23,7 @@ class Navs extends Component {
         return (
             <div className={classes.navs}>
                 <NavsLinks callbackFromParent={this.myCallback} />
-                <NavsTabs active={this.state.activeLink}/>
+            <NavsTabs active={this.state.activeLink}/>
             </div>
         );
     }

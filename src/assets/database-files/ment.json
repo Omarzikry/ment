@@ -1,130 +1,146 @@
 {
   "product1" : {
     "Brand" : "Nike",
-    "catigory" : "casual",
+    "category" : "casual",
     "categoryId": "2",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home.jpg?alt=media&token=e7e3fe10-4ea1-49b6-acce-55699cf5389d",
-    "name" : "women sweater yellow"
+    "name" : "women sweater yellow",
+    "id": "1"
   },
   "product2" : {
     "Brand" : "Nike",
-    "catigory" : "casual",
+    "category" : "casual",
     "categoryId": "2",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home1.jpg?alt=media&token=fa77aa0b-6b9e-4b3b-b595-8436a2318a79",
-    "name" : "women red sweater"
+    "name" : "women red sweater",
+    "id": "2"
   },
   "product3" : {
     "Brand" : "Nike",
-    "catigory" : "casual",
+    "category" : "casual",
     "categoryId": "2",
     "gender" : "male",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home2.jpg?alt=media&token=f314fe14-f924-4887-a62c-2cf89311223c",
-    "name" : "men sweater black"
+    "name" : "men sweater black",
+    "id": "3"
   },
   "product4" : {
     "Brand" : "Nike",
-    "catigory" : "casual",
+    "category" : "casual",
     "categoryId": "2",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home3.jpg?alt=media&token=bd6325df-26cf-4f50-9c82-a67d0dbdb8c1",
-    "name" : "women sweater black"
+    "name" : "women sweater black",
+    "id": "4"
   },
   "product5" : {
     "Brand" : "Nike",
-    "catigory" : "casual",
+    "category" : "casual",
     "categoryId": "2",
     "gender" : "male",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home4.jpg?alt=media&token=fa5ea8a7-0083-4c63-a240-d5c484e179f1",
-    "name" : "men sweater black"
+    "name" : "men sweater black",
+    "id": "5"
   },
   "product6" : {
     "Brand" : "Nike",
-    "catigory" : "casual",
+    "category" : "casual",
     "categoryId": "2",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home5.jpg?alt=media&token=ba331b83-51ff-48b3-9682-9780f1fd8e7f",
-    "name" : "women sweater pink"
+    "name" : "women sweater pink",
+    "id": "6"
   },
   "product7" : {
     "Brand" : "Nike",
-    "catigory" : "casual",
+    "category" : "casual",
     "categoryId": "2",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home6.jpg?alt=media&token=95b1bccc-7a29-414c-b1d2-abe14ac020ad",
-    "name" : "women shirtcut white"
+    "name" : "women shirtcut white",
+    "id": "7"
   },
   "product8" : {
     "Brand" : "Nike",
-    "catigory" : "casual",
+    "category" : "casual",
     "categoryId": "2",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home7.jpg?alt=media&token=8ac36434-343b-49d7-be4d-feb8131b3bbd",
-    "name" : "women sweater black"
+    "name" : "women sweater black",
+    "id": "8"
   },
   "product10" : {
     "Brand" : "Nike",
-    "catigory" : "swim suits",
+    "category" : "swim suits",
     "categoryId": "3",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home7.jpg?alt=media&token=8ac36434-343b-49d7-be4d-feb8131b3bbd",
-    "name" : "women sweater black"
+    "name" : "women sweater black",
+    "id": "9"
   },
   "product11" : {
     "Brand" : "Nike",
-    "catigory" : "socks",
+    "category" : "socks",
     "categoryId": "4",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home7.jpg?alt=media&token=8ac36434-343b-49d7-be4d-feb8131b3bbd",
-    "name" : "women sweater black"
+    "name" : "women sweater black",
+    "id": "9"
   },
   "product9" : {
     "Brand" : "polo",
-    "catigory" : "formal",
+    "category" : "formal",
     "categoryId": "1",
     "gender" : "male",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-.jpg?alt=media&token=509a3683-749c-44fa-b1d6-1452db7e9862",
-    "name" : "textured weave suit"
+    "name" : "textured weave suit",
+    "id": "10"
   },
   "product12" : {
     "Brand" : "polo",
-    "catigory" : "formal",
+    "category" : "formal",
     "categoryId": "1",
     "gender" : "male",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-1.jpg?alt=media&token=381a6b82-04b6-4615-b049-fe6884420cea",
-    "name" : "white shirt"
+    "name" : "white shirt",
+    "id": "11"
   },
   "product13" : {
     "Brand" : "armani",
-    "catigory" : "formal",
+    "category" : "formal",
     "categoryId": "1",
     "gender" : "male",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-3.jpg?alt=media&token=7d2b7938-0fc0-43d0-b193-621f80665042",
-    "name" : "traveler suit"
+    "name" : "traveler suit",
+    "id": "12"
   },
   "product14" : {
     "Brand" : "eagel",
-    "catigory" : "formal",
+    "category" : "formal",
     "categoryId": "1",
     "gender" : "male",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-4.jpg?alt=media&token=28a0a2c7-f70a-4102-9d07-1f3d43f595cb",
-    "name" : "two toned blue suit"
+    "name" : "two toned blue suit",
+    "id": "13"
   },
   "product15" : {
     "Brand" : "armani",
-    "catigory" : "formal",
+    "category" : "formal",
     "categoryId": "1",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-6.jpg?alt=media&token=233e00d7-a601-46a9-a3de-ec1cf62a2861",
-    "name" : "oversized plaid blazer"
+    "name" : "oversized plaid blazer",
+    "id": "14"
   },
   "product16" : {
     "Brand" : "polo",
-    "catigory" : "formal",
+    "category" : "formal",
     "categoryId": "1",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-7.jpg?alt=media&token=78d06229-0ef9-41dc-969d-832a68f509fd",
-    "name" : "ruffled pocket blazer"
+    "name" : "ruffled pocket blazer",
+    "id": "15"
   }
 }

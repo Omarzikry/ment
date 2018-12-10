@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import axios from '../../../../axiosCarouselImages';
 import classes from './NavsTabs.css';
 import Spinner from '../../Spinner/Spinner';
-import arrowImg from '../../../../assets/images/Arrow-UP-Right.png'
+import Card from '../../Card/Card';
 class NavsTabs extends Component {
 
     state = {
         products: [],
         loading: true,
+        activeProduct: null
     }
 
     componentDidMount() {
@@ -17,35 +18,33 @@ class NavsTabs extends Component {
             })
             .catch(error => {
                 console.log(error)
-            })
-
+        })
     }
+
+
+    cardClicked = (id) => {
+        this.setState({activeProduct: id});
+        console.log(id)
+    }
+
+
     render() {
         // =============================== Here I take the products state which contains object contains objects ===============================//
-        const products = Object.keys(this.state.products).map(key => {
+        const products = Object.keys(this.state.products).map((key) => {
 
             // =============================== I turned it into array then mapped it ===============================//
 
-            const casualProducts = this.state.products[key].categoryId === this.props.active; // <<<<< Here I check if the catigory property inside the object is equal to the active 
-                                                                                                //// state recived from the parent so I know what catigory to render
+            const rightCategory = this.state.products[key].categoryId === this.props.active; // <<<<< Here I check if the category property inside the object is equal to the active 
+                                                                                                //// state recived from the parent so I know what category to render
             const src = this.state.products[key];
 
 
 
             // =============================== Here I check if the array of objects meets the condition then turn it into jsx and passing props ===============================//   
             
-            if (casualProducts) {
+            if (rightCategory) {
                 return (
-                        <div className={classes.card} key={key}>
-                            <img src={src.imageLink} alt={src.name} className={classes.productImage} />
-                            <div className={classes.overlay}>
-                                <span className={classes.circle}><img src={arrowImg} alt="" /></span>
-                                <div className={classes.text}>
-                                <h3>{src.name}</h3>
-                                <p>{src.Brand}</p>
-                                </div>
-                            </div>
-                        </div>
+                        <Card productImage={src.imageLink} productImageAlt={src.name}  name={src.name} brand={src.Brand} click={this.cardClicked.bind(this , src.id)} key={key} active={false} id={'product' + src.id} />
                 );
             };
             return null
