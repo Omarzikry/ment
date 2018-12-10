@@ -1,0 +1,93 @@
+.Grid, .circle img , .circle , .card , .productImage , .overlay {
+    transition: all 0.4s ease;
+}
+
+.Grid{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.productImage{
+    width: 100%; 
+    object-fit: cover;
+    height: 100%;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(180,211,211, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    opacity: 0;
+}
+.text{
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.circle{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0)
+}
+.circle img{
+    width: 10px;
+    transform: rotate(-270deg);
+}
+
+.card h3{
+    font-family: Poppins,sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: capitalize
+}
+.card p{
+    font-family: Nunito,sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card:hover .circle img{
+    transform: rotate(0deg)
+}
+
+.card:hover .circle{
+    transform: scale(1);
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+
+
+@media only screen and (min-width: 768px){
+    .Grid{
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "catigory1" : {
+    "name": "formal",
+    "id": "1"
+  },
+  "catigory2" : {
+    "name": "casual",
+    "id": "2"
+  },
+  "catigory3" : {
+    "name": "swim suits",
+    "id": "3"
+  },
+  "catigory4" : {
+    "name": "socks",
+    "id": "4"
+  }
+}

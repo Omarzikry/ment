@@ -7,6 +7,7 @@ import axios from '../../../axiosCarouselImages';
 import Spinner from '../Spinner/Spinner';
 import Button from '../Button/Button';
 import playImg from '../../../assets/images/play.png'
+import ActiveDots from './ActiveDots/ActiveDots';
 class Carousel extends Component {
 
     state = {
@@ -14,6 +15,7 @@ class Carousel extends Component {
         currentIndex: 0,
         translateValue: 0,
         loading: true,
+        imagesLoaded: true,
     }
 
 
@@ -24,7 +26,13 @@ class Carousel extends Component {
             .then(response => {
                 const images = Object.entries(response.data)
                 this.setState({ images: images, loading: false })
+                if(this.props.auto){
+                    this.autoplay();
+                }
             })
+    }
+    componentWillUnmount(){
+        clearInterval(this.timer);
     }
 
     // ============ PREVIOUS SLIDE ============ //
@@ -52,6 +60,11 @@ class Carousel extends Component {
 
     }
 
+    translateValue = (currentIndex) => {
+        const translateValue = currentIndex * -(this.slideWidth())
+        this.setState({translateValue: translateValue})
+    }
+
     // ============ NEXT SLIDE ============ //
 
     goToNextSlide = () => {
@@ -70,10 +83,11 @@ class Carousel extends Component {
 
                 currentIndex: prevState.currentIndex + 1,
 
-                translateValue: prevState.translateValue + -(this.slideWidth())
+                //translateValue: prevState.translateValue + -(this.slideWidth())
 
             }));
         }
+        this.translateValue(this.state.currentIndex)
     }
 
 
@@ -91,9 +105,15 @@ class Carousel extends Component {
     //============ AUTOPLAY ============ //
 
     autoplay = () => {
-            setInterval(() => {
+           this.timer = setInterval(() => {
                 this.goToNextSlide()
-            }, 1000)
+            }, 3000)
+    }
+
+    // ====== callback function to recieve the current index ====== //
+    recieveIndex = (indexfromChild) => {
+        this.setState({currentIndex: indexfromChild});
+        this.translateValue(indexfromChild)
     }
 
     render() {
@@ -105,9 +125,10 @@ class Carousel extends Component {
         }
         return (
             <div className={classes.carouselContainer}>
+                <ActiveDots currentIndex={this.state.currentIndex} imagesNumber={this.state.images.length} loading={!this.state.loading} callIndex={this.recieveIndex}/>
                 <div className={classes.text}>
-                <h2>Maia <br /> Anderson</h2>
-                <h3>British Model</h3>
+                <h2>Maia<br />Anderson</h2>
+                <h3>british model</h3>
                 </div>
                 <div className={classes.slider}>
                 <div className="slider-wrapper" style={{ transform: `translateX(${this.state.translateValue}px)`, transition: 'transform ease-out 0.45s', display: 'flex', width: '100%', height: '100%', position: 'relative' }}>

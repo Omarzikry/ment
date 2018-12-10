@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import axios from '../../../../axiosCarouselImages';
-import classes from './NavsTabs';
-import Spinner from '../../Spinner/Spinner'
+import classes from './NavsTabs.css';
+import Spinner from '../../Spinner/Spinner';
+import arrowImg from '../../../../assets/images/Arrow-UP-Right.png'
 class NavsTabs extends Component {
 
     state = {
         products: [],
         loading: true,
-        active: 'casual'
     }
 
     componentDidMount() {
@@ -26,7 +26,7 @@ class NavsTabs extends Component {
 
             // =============================== I turned it into array then mapped it ===============================//
 
-            const casualProducts = this.state.products[key].catigory === this.props.active; // <<<<< Here I check if the catigory property inside the object is equal to the active 
+            const casualProducts = this.state.products[key].categoryId === this.props.active; // <<<<< Here I check if the catigory property inside the object is equal to the active 
                                                                                                 //// state recived from the parent so I know what catigory to render
             const src = this.state.products[key];
 
@@ -36,26 +36,26 @@ class NavsTabs extends Component {
             
             if (casualProducts) {
                 return (
-                    <div className={classes.grid} key={key}>
-                        <div className={classes.card}>
-                            <img src={src.imageLink} alt={src.name} />
-                            <div className={classes.describtion}>
+                        <div className={classes.card} key={key}>
+                            <img src={src.imageLink} alt={src.name} className={classes.productImage} />
+                            <div className={classes.overlay}>
+                                <span className={classes.circle}><img src={arrowImg} alt="" /></span>
+                                <div className={classes.text}>
                                 <h3>{src.name}</h3>
                                 <p>{src.Brand}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 );
             };
             return null
         });
 
         return (
-            <div>
+            <div className={classes.Grid}>
             {/* // =============================== Checking the loading state before rendering anything ===============================// */}
 
                 {this.state.loading ? <Spinner /> : products}
-                {console.log(this.state.loading)}
             </div>
         );
     }

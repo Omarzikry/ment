@@ -6,7 +6,7 @@ class NavsLinks extends Component {
     state = {
         categories: null,
         loading: true,
-        selected: 'casual'
+        selected: '2'
     }
     componentDidMount(){
         axios.get('/categories.json')
@@ -20,15 +20,15 @@ class NavsLinks extends Component {
         }
     }
     handleClick = (index , elm) => {
-        //console.log(index , elm);
-        this.props.callbackFromParent(elm)
-        this.setState({selected: elm});
+        console.log(index , elm);
+        this.props.callbackFromParent(elm.id)
+        this.setState({selected: elm.id});
     }
     render() {
         let categories = null;
         if(this.state.loading !== true){
             categories = Object.keys(this.state.categories).map((key , index) => {
-                return <NavsLink id={this.state.categories[key]} active={this.state.categories[key] === this.state.selected ? true : null} key={key} click={this.handleClick.bind(this, index , this.state.categories[key])}>{this.state.categories[key]}</NavsLink>
+                return <NavsLink id={this.state.categories[key].id} active={this.state.categories[key].id === this.state.selected ? true : null} key={key} click={this.handleClick.bind(this, index , this.state.categories[key])}>{this.state.categories[key].name}</NavsLink>
             }); 
         }
         return (

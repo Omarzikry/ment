@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import NavsLinks from './NavsLinks/NavsLinks';
 import NavsTabs from './NavsTabs/NavsTabs';
+import classes from './Navs.css'
 
 class Navs extends Component {
 
     state = {
-        activeLink: 'casual',
+        activeLink: '2',
         loading: true
     }
 
@@ -20,7 +21,7 @@ class Navs extends Component {
 
     render() {
         return (
-            <div>
+            <div className={classes.navs}>
                 <NavsLinks callbackFromParent={this.myCallback} />
                 <NavsTabs active={this.state.activeLink}/>
             </div>

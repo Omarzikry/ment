@@ -1,0 +1,58 @@
+.dots , p , p:after ,p.active:after{
+    transition: all 0.4s ease;
+}
+.dots{
+    position: absolute;
+    right: 0%;
+    bottom: -40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dots p{
+    font-size: 12px;
+    font-family: Nunito , sans-serif;
+    font-weight: 700;
+    color: #696970;
+    position: relative;
+    cursor: pointer;
+    margin: 0 1em;
+}
+.dots p:after{
+    content: "";
+    background-color: black;
+    width: 0px;
+    height: 1px;
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    display: none
+}
+.dots p.active{
+    color: black;
+    font-size: 15px
+}
+.dots p.active:after{
+    width: 40px;
+    display: none
+}
+
+@media only screen and (min-width: 768px){
+    .dots p:after , .dots p.active:after{
+        display: initial
+    }
+    .dots{
+        right: -40px;
+        bottom: 20px;
+        display: block;
+        width: auto;
+    }
+    .dots p{
+        margin: 2em 0;
+        font-size: 10px;
+    }
+    .dots p.active{
+        font-size: 10px
+    }
+}

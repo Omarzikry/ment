@@ -11,7 +11,7 @@ class App extends Component {
       <BrowserRouter>
       <div className="App">
         <Navbar />
-        <Carousel/>
+        <Carousel auto={true}/>
         <Navs />
       </div>
       </BrowserRouter>
