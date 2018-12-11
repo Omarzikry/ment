@@ -16,6 +16,7 @@ class Carousel extends Component {
         translateValue: 0,
         loading: true,
         imagesLoaded: true,
+        textIndex: 1
     }
 
 
@@ -107,7 +108,7 @@ class Carousel extends Component {
     autoplay = () => {
            this.timer = setInterval(() => {
                 this.goToNextSlide()
-            }, 3000)
+            }, 4000)
     }
 
     // ====== callback function to recieve the current index ====== //
@@ -127,9 +128,9 @@ class Carousel extends Component {
         // ========= render text ===========//
         let text = null;
         if(this.state.loading !== true){
-            text = this.state.images.map(image => {
+            text = this.state.images.map(( image , index) => {
                 return(
-                <div className={classes.text} key={image}>
+                <div className={[classes.text , this.state.currentIndex === index ? classes.activeText : null ].join(' ')} key={image}>
                 <h2>{image[1].firstName}<br />{image[1].lastName}</h2>
                 <h3>{image[1].job}</h3>
                 </div>

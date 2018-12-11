@@ -72,6 +72,11 @@
 .card:hover .overlay{
     opacity: 1;
 }
-.active .circle{
-    width: 100px
+.active{
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 50vw;
+   height: 100vh;
+   z-index: 99;
 }

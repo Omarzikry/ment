@@ -22,15 +22,14 @@ class NavsTabs extends Component {
     }
 
 
-    cardClicked = (id) => {
-        this.setState({activeProduct: id});
-        console.log(id)
+    cardClicked = (index) => {
+        this.setState({activeProduct: index})
     }
 
 
     render() {
         // =============================== Here I take the products state which contains object contains objects ===============================//
-        const products = Object.keys(this.state.products).map((key) => {
+        const products = Object.keys(this.state.products).map((key , index) => {
 
             // =============================== I turned it into array then mapped it ===============================//
 
@@ -44,7 +43,7 @@ class NavsTabs extends Component {
             
             if (rightCategory) {
                 return (
-                        <Card productImage={src.imageLink} productImageAlt={src.name}  name={src.name} brand={src.Brand} click={this.cardClicked.bind(this , src.id)} key={key} active={false} id={'product' + src.id} />
+                        <Card productImage={src.imageLink} productImageAlt={src.name}  name={src.name} brand={src.Brand} click={this.cardClicked.bind(this , index)} key={key} active={this.state.activeProduct === index ? true : false} id={'product' + src.id} />
                 );
             };
             return null
