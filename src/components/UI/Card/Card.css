@@ -72,11 +72,53 @@
 .card:hover .overlay{
     opacity: 1;
 }
-.active{
+/* .active{
    position: fixed;
    left: 0;
    top: 0;
    width: 50vw;
    height: 100vh;
    z-index: 99;
+   background-color: white
+} */
+
+.fullCard{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-color: #f1f1f1;
+}
+.imgContainer{
+    overflow: auto !important;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.imgContainer img{
+    width: 50%;
+    flex-shrink: 0;  
+}
+.imgContainer::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+.imgContainer::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+
 }
