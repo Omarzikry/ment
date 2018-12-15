@@ -15,11 +15,15 @@ const Card = (props) => {
     </div>;
 
     if (props.opened) {
+
+        // ========== unload scroll bars on opening ========== //
         const unloadScrollBars = () => {
             document.documentElement.style.overflow = 'hidden';  // firefox, chrome
             document.body.scroll = "no"; // ie only
         };
         unloadScrollBars();
+
+        // ========== load images ========== //
         let images = [];
         for(let myImage in props.fullImages){
             images.push(props.fullImages[myImage]);
@@ -31,13 +35,11 @@ const Card = (props) => {
         card = <div className={[classes.fullCard, props.active ? classes.active : null].join(' ')} onClick={props.click} id={props.id}>
                 <div className={classes.imgContainer}>
                 {renderImages}
-                <div className={classes.productDetails}>
-                
+                <div className={classes.btn} onClick={(e) => {e.stopPropagation();props.cancelClicked()}}>cancel</div>
                 </div>
-                <div className={classes.btn} onClick={(e) => {
-             e.stopPropagation(); 
-             props.cancelClicked()
-     }}>cancel</div>
+                <div className={classes.productDetails}>
+                <h1>hello</h1>
+                <button>helo</button>
                 </div>
         </div>;
     }

@@ -11,7 +11,6 @@ class NavsTabs extends Component {
         activeProduct: null,
         fullImages: [],
     }
-
     componentDidMount() {
         axios.get('/products.json')
             .then(res => {

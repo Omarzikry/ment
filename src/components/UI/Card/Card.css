@@ -91,36 +91,49 @@
     top: 0;
     z-index: 999;
     background-color: #f1f1f1;
+    overflow: auto !important;
+    scroll-behavior: smooth;
 }
 .imgContainer{
     overflow: auto !important;
     width: 100%;
     display: flex;
     align-items: flex-start;
-    height: 100%;
+    height: auto;
     flex-direction: column;
-    background-color: #f1f1f1;
-    overflow-x: hidden;
     position: relative;
-    scroll-behavior: smooth;
+    box-sizing: border-box
 }
 .imgContainer img{
     width: 50%;
     flex-shrink: 0;
-    margin: 2em;
-    margin-bottom: 0em;
+    margin: 2em 0 0 0;
+    box-sizing: border-box
    /* border: 5px solid #b4d3d3*/
 }
-.imgContainer::-webkit-scrollbar {
+.fullCard::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
 }
 /* optional: show position indicator in red */
-.imgContainer::-webkit-scrollbar-thumb {
+.fullCard::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
 .btn{
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 2;
+}
+
+/*============== information in details page ==============*/
+.productDetails{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #FF0000 ;
+    padding-left: 4%;
+    box-sizing: border-box;
 }
