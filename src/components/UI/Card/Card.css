@@ -82,6 +82,7 @@
    background-color: white
 } */
 
+/*================ FULL CARD STYLING ================*/
 .fullCard{
     width: 100vw;
     height: 100vh;
@@ -105,7 +106,10 @@
 }
 .imgContainer img{
     width: 50%;
-    flex-shrink: 0;  
+    flex-shrink: 0;
+    margin: 2em;
+    margin-bottom: 0em;
+   /* border: 5px solid #b4d3d3*/
 }
 .imgContainer::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
@@ -115,10 +119,8 @@
 .imgContainer::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
-
 .btn{
     position: absolute;
     right: 0;
     top: 0;
-
 }
