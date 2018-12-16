@@ -13,37 +13,58 @@
       "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater2.jpg?alt=media&token=8d541e7c-cf8c-4538-a094-e17055c84ea0",
       "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater.jpg?alt=media&token=1e6cde7e-db5d-44a2-9ba8-0c513243b9bb"
     ],
-    "description": "Rib trim flare sleeves add a sporty-meets-femme twist to this super soft sweater. Foldover cowl neck. Long sleeves."
+    "description": "Rib trim flare sleeves add a sporty-meets-femme twist to this super soft sweater. Foldover cowl neck. Long sleeves.Rib trim flare sleeves add a sporty-meets-femme twist to this super soft sweater. Foldover cowl neck."
   },
   "product2" : {
-    "Brand" : "Nike",
+    "Brand" : "Armani",
     "category" : "casual",
     "categoryId": "2",
     "gender" : "female",
-    "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home1.jpg?alt=media&token=fa77aa0b-6b9e-4b3b-b595-8436a2318a79",
-    "name" : "christmas red sweater",
+    "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/basic-sweater-small.jpg?alt=media&token=8c0ebb0f-8850-451e-afb1-d526a6bc75ab",
+    "name" : "BASIC SWEATER",
     "id": "2",
-    "price": "150"
+    "price": "150",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/basic-sweater3.jpg?alt=media&token=a19bde43-36d7-4288-a256-c75e222ee894",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/basic-sweater.jpg?alt=media&token=6d6a9e94-b1f1-4796-bc33-d535bd71b510",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/basic-sweater1.jpg?alt=media&token=ca63db44-185b-4989-938d-bdc4fd10ccc4"
+    ],
+    "description": "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+    "color": "DARK BLUE"
   },
   "product3" : {
-    "Brand" : "Nike",
+    "Brand" : "lc weikiki",
     "category" : "casual",
     "categoryId": "2",
     "gender" : "male",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home2.jpg?alt=media&token=f314fe14-f924-4887-a62c-2cf89311223c",
     "name" : "slim fit henley",
     "id": "3",
-    "price": "197.5"
+    "price": "197.5",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater15.jpg?alt=media&token=81d47ce6-2cc4-4a7d-929c-25bc1c76c63e",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater14.jpg?alt=media&token=73bc4604-677c-40fa-b546-39c51e142faa",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater13.jpg?alt=media&token=20b9ac4b-3a35-4e5f-9dde-ae959257f7e3"
+    ],
+    "description": "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+    "color": "DARK BLUE"
   },
   "product4" : {
-    "Brand" : "Nike",
+    "Brand" : "Max",
     "category" : "casual",
     "categoryId": "2",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home3.jpg?alt=media&token=bd6325df-26cf-4f50-9c82-a67d0dbdb8c1",
     "name" : "slim fit shirt",
     "id": "4",
-    "price": "201.5"
+    "price": "201.5",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater4.jpg?alt=media&token=962b053a-094d-415a-abe5-d8d3aa3ccac3",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater6.jpg?alt=media&token=422546aa-aa78-48f7-ab90-96d912efe378",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater5.jpg?alt=media&token=cc4df480-d284-4168-b142-f2d97ea87900"
+    ],
+    "description": "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+    "color": "matte black"
   },
   "product5" : {
     "Brand" : "Nike",
@@ -53,7 +74,14 @@
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home4.jpg?alt=media&token=fa5ea8a7-0083-4c63-a240-d5c484e179f1",
     "name" : "textured weave shirt",
     "id": "5",
-    "price": "167.7"
+    "price": "167.7",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater10.jpg?alt=media&token=7d3aac7e-ce55-4660-9433-010ca24e52fc",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater12.jpg?alt=media&token=e38970c2-d7d2-449a-863d-2c2342f6fe99",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater11.jpg?alt=media&token=5f8459c2-4946-46cd-b741-75f221819401"
+    ],
+    "description": "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+    "color": "matte black"
   },
   "product6" : {
     "Brand" : "Nike",
@@ -63,17 +91,27 @@
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home5.jpg?alt=media&token=ba331b83-51ff-48b3-9682-9780f1fd8e7f",
     "name" : "princey sweater",
     "id": "6",
-    "price": "198.5"
+    "price": "198.5",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater16.jpg?alt=media&token=796a9194-1a04-48fa-88ad-e807cc13854c"
+    ],
+    "description": "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+    "color": "Light pink"
   },
   "product7" : {
-    "Brand" : "Nike",
+    "Brand" : "Eagle",
     "category" : "casual",
     "categoryId": "2",
     "gender" : "female",
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home6.jpg?alt=media&token=95b1bccc-7a29-414c-b1d2-abe14ac020ad",
     "name" : "turtle neck shirt",
     "id": "7",
-    "price": "99.9"
+    "price": "99.9",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater17.jpg?alt=media&token=8d279740-9eda-40cc-b292-eb8cbba114e7"
+    ],
+    "description": "Turtle neck white T-shirt that looks awesome on any pants",
+    "color": "white"
   },
   "product8" : {
     "Brand" : "Nike",
@@ -83,7 +121,14 @@
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home7.jpg?alt=media&token=8ac36434-343b-49d7-be4d-feb8131b3bbd",
     "name" : "weave jacket",
     "id": "8",
-    "price": "198"
+    "price": "198",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater18.jpg?alt=media&token=a7326ea4-e520-400c-8aff-91bec4b081d8",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater20.jpg?alt=media&token=cf3ab990-3df6-46bf-89d4-d40312f0965d",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater19.jpg?alt=media&token=c2bd5806-fcad-44d1-b912-413d45ce7a8e"
+    ],
+    "description": "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+    "color": "matte black"
   },
   "product10" : {
     "Brand" : "Nike",
@@ -113,7 +158,14 @@
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-.jpg?alt=media&token=509a3683-749c-44fa-b1d6-1452db7e9862",
     "name" : "textured weave suit",
     "id": "10",
-    "price": "468.5"
+    "price": "468.5",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal4.jpg?alt=media&token=abf1ac74-07c2-43aa-b9cc-1ffc0dbe5cc9",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal6.jpg?alt=media&token=b4e991f3-9d91-4f77-a5a2-167f7af9b8ec",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal28.jpg?alt=media&token=685af1a7-555f-4596-b60d-566865d0a244"
+    ],
+    "description": "Jacket made of textured weave fabric. Lapel collar and long sleeves. Front double welt pockets at hip and welt pocket at chest. Interior lining with pocket detail. Double back vent. Front button closure.",
+    "color": "faded blue"
   },
   "product12" : {
     "Brand" : "polo",
@@ -123,7 +175,14 @@
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-1.jpg?alt=media&token=381a6b82-04b6-4615-b049-fe6884420cea",
     "name" : "white shirt",
     "id": "11",
-    "price": "599.9"
+    "price": "599.9",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal.jpg?alt=media&token=2f6c8221-05fc-412e-bff2-248ad91a61a5",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal2.jpg?alt=media&token=39cfa1f8-a892-469a-b089-942e492a91a2",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal1.jpg?alt=media&token=21866a07-5f36-4fdc-b34d-32000cc106c1"
+    ],
+    "description": "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+    "color": "white"
   },
   "product13" : {
     "Brand" : "armani",
@@ -133,7 +192,14 @@
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-3.jpg?alt=media&token=7d2b7938-0fc0-43d0-b193-621f80665042",
     "name" : "traveler suit",
     "id": "12",
-    "price": "799"
+    "price": "799",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal10.jpg?alt=media&token=e8c36052-8f4a-4435-b95e-adc824582535",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal11.jpg?alt=media&token=552d2c97-19be-42c1-b636-250244aad919",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal12.jpg?alt=media&token=add6f6b6-f7e5-4dda-a077-6290f1c7a05e"
+    ],
+    "description": "Blazer with Bi-Stretch + Easy Care technical features. Notched lapels and buttonhole pin. Long sleeves. Two front flap pockets. Chest pocket with contrasting pocket square. Lined. Two interior pockets. Back vent. Buttoned cuffs. Front button closure.",
+    "color": "Dark blue"
   },
   "product14" : {
     "Brand" : "eagel",
@@ -143,7 +209,14 @@
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-4.jpg?alt=media&token=28a0a2c7-f70a-4102-9d07-1f3d43f595cb",
     "name" : "two toned blue suit",
     "id": "13",
-    "price": "765"
+    "price": "765",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal14.jpg?alt=media&token=81d0c2af-365f-49ef-b5b3-7a3e86b92d92",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal13.jpg?alt=media&token=a03886f1-18b1-4e05-a44a-a9a9648e1013",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal15.jpg?alt=media&token=e5146001-af52-4b44-ae7f-aa850c861c0e"
+    ],
+    "description": "Two toned textured weave jacket with pointed lapels and long sleeves. Two front pockets. Chest pocket. Lined. Interior pocket. Two back vents. Front button closure. Buttoned cuffs.",
+    "color": "Dark blue"
   },
   "product15" : {
     "Brand" : "armani",
@@ -153,7 +226,15 @@
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-6.jpg?alt=media&token=233e00d7-a601-46a9-a3de-ec1cf62a2861",
     "name" : "oversized plaid blazer",
     "id": "14",
-    "price": "899"
+    "price": "899",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal19.jpg?alt=media&token=7c2ba92c-f426-4dd3-a7ff-dcbd49d0c9b2",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal20.jpg?alt=media&token=bcc44f88-8628-4385-94d2-4ccb5bd26a4a",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal24.jpg?alt=media&token=0217e777-70cf-4d18-967c-12ab2bff6dc2",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal25.jpg?alt=media&token=ec93e67d-763d-4666-a99c-0de5d279c37c"
+    ],
+    "description": "Long loose fit blazer with lapel collar and long sleeves. Front flap pockets. Contrasting front button closure.",
+    "color": "Dark blue"
   },
   "product16" : {
     "Brand" : "polo",
@@ -163,6 +244,15 @@
     "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-7.jpg?alt=media&token=78d06229-0ef9-41dc-969d-832a68f509fd",
     "name" : "ruffled pocket blazer",
     "id": "15",
-    "price": "776"
+    "price": "776",
+    "fullImages": [
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal21.jpg?alt=media&token=eaa540c6-5aee-4124-8bec-e5073f821667",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal22.jpg?alt=media&token=b61b8200-b0a8-4289-8a2a-de1b99b59317",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal23.jpg?alt=media&token=d0beec24-e631-444e-8466-55f714ac54a4",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal26.jpg?alt=media&token=5c33b453-a340-4fcc-a98a-9d59606f4815",
+      "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal27.jpg?alt=media&token=eb154221-d6ab-4710-a6f1-faa745b63f98"
+    ],
+    "description": "Round neck long-sleeved blazer. Front pockets with ruffled flap. Features front buttons in the same fabric.",
+    "color": "red"
   }
 }

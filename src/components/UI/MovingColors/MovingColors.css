@@ -16,7 +16,7 @@
     animation: moveOut 1s 0.5s forwards;
 }
 .black{
-    background-color: #3D3B30;
+    background-color: #000;
     z-index: 998;
     animation: moveOut 1s 0.3s forwards;
 }

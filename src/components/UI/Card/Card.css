@@ -105,10 +105,12 @@
     box-sizing: border-box
 }
 .imgContainer img{
-    width: 50%;
+    width: 45%;
     flex-shrink: 0;
     margin: 2em 0 0 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    margin-right: 2.5%;
+    margin-left: 2.5%
    /* border: 5px solid #b4d3d3*/
 }
 .fullCard::-webkit-scrollbar {
@@ -141,21 +143,21 @@
     position: absolute;
     right: 2em;
     top: 2em;
-    color: #3D3B30;
+    color: #000;
     text-transform: uppercase;
     font-family: Nunito;
     font-weight: 800;
     letter-spacing: 1px;
     cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
-.btn span{
-    font-size: 0.9em;
-    padding-left: 0.5em;
-    transition: all 0.5s ease
-}
-.btn:hover span{
-    position: relative;
-    left: 1em;
+.btn span img{
+    filter: brightness(0);
+    height: 9px;
+    padding-left: 1em;
 }
 /*============== information in details page ==============*/
 .productDetails{
@@ -166,11 +168,77 @@
     width: 50%;
     padding-left: 4%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding: 2em 0.5em;
 }
-
+.productDetails h2{
+    text-align: left;
+    text-transform: uppercase;
+    font-family: Nunito,sans-serif;
+    font-weight: 700;
+    padding-top: 3em;
+}
+.productDetails h3{
+    text-align: left;
+    font-family: Nunito,sans-serif;
+    font-weight: 400;
+    color: #BA2D0B;
+    padding-bottom: 1em;
+}
+.productDetails p ,.productDetails h4{
+    line-height: 1.5em;
+    font-family: Nunito ,sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
+    padding-right: 2em;
+}
+.productDetails h4{
+    text-transform: uppercase
+}
 @keyframes moveIn{
     0%{}
     100%{
         transform: scale(1);
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .imgContainer{
+        width: 100%;
+        height: 40%;
+        flex-direction: row;
+        overflow-y: hidden;
+        box-sizing: border-box
+    }
+    .imgContainer img{
+        height: 100%;
+        width: auto;
+        margin: 0 1em;
+    }
+    .productDetails{
+        right: 0;
+        bottom: 0;
+        top: initial;
+        height: 60%;
+        width: 100%;
+        overflow: auto;
+        padding: 0 0.5em;
+        padding-bottom: 2em;
+    }
+    .productDetails .btn{
+        position: fixed;
+        top: 1em;
+        right: 1em;
+    }
+    .productDetails h2{
+        padding-top: 0
+    }
+    .productDetails h3{
+        padding-bottom: 0
     }
 }
