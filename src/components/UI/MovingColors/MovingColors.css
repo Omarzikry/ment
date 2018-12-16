@@ -1,0 +1,29 @@
+.MovingColors{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0; 
+}
+.white{
+    background-color: white;
+    z-index: 999;
+    animation: moveOut 1s 0.1s forwards;
+}
+.blue{
+    background-color: #6CCFF6;
+    z-index: 997;
+    animation: moveOut 1s 0.5s forwards;
+}
+.black{
+    background-color: #3D3B30;
+    z-index: 998;
+    animation: moveOut 1s 0.3s forwards;
+}
+
+@keyframes moveOut{
+    0%{transform: translateX(0vw)}
+    100%{
+        transform: translateX(100vw)
+    }
+}

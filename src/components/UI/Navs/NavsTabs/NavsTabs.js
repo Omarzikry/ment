@@ -48,7 +48,7 @@ class NavsTabs extends Component {
             
             if (rightCategory) {
                 return (
-                    <Card productImage={src.imageLink} productImageAlt={src.name} opened={this.state.activeProduct === index ? true : false}  name={src.name} brand={src.Brand} click={this.cardClicked.bind(this , index)} key={key} active={this.state.activeProduct === index ? true : false} id={'product' + src.id} fullImages={src.fullImages} cancelClicked={this.cancelClick}/>
+                    <Card productImage={src.imageLink} productImageAlt={src.name} opened={this.state.activeProduct === index ? true : false}  name={src.name} brand={src.Brand} click={this.cardClicked.bind(this , index)} key={key} active={this.state.activeProduct === index ? true : false} id={'product' + src.id} fullImages={src.fullImages} cancelClicked={this.cancelClick} price={src.price} description={src.description}/>
                 );
             };
             return null

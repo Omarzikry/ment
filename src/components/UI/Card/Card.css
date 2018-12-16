@@ -119,13 +119,44 @@
 .fullCard::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
-.btn{
+/* .btn{
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 2em;
+    top: 2em;
     z-index: 2;
+    background-color: #3D3B30;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(61,59,48,0.3);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(61,59,48,0.3);
+    box-shadow: 0px 0px 10px 0px rgba(61,59,48,0.3);
+    cursor: pointer;
+} */
+.btn {
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    color: #3D3B30;
+    text-transform: uppercase;
+    font-family: Nunito;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
-
+.btn span{
+    font-size: 0.9em;
+    padding-left: 0.5em;
+    transition: all 0.5s ease
+}
+.btn:hover span{
+    position: relative;
+    left: 1em;
+}
 /*============== information in details page ==============*/
 .productDetails{
     position: fixed;
@@ -133,7 +164,13 @@
     top: 0;
     height: 100%;
     width: 50%;
-    background-color: #FF0000 ;
     padding-left: 4%;
     box-sizing: border-box;
+}
+
+@keyframes moveIn{
+    0%{}
+    100%{
+        transform: scale(1);
+    }
 }

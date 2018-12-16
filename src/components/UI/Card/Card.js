@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import classes from './Card.css';
 import arrowImg from '../../../assets/images/Arrow-UP-Right.png';
+import MovingColors from '../MovingColors/MovingColors';
 const Card = (props) => {
 
     let card = <div className={[classes.card, props.active ? classes.active : null].join(' ')} onClick={props.click} id={props.id}>
@@ -33,13 +34,18 @@ const Card = (props) => {
             return <img src={image} alt="" key={index}/>
         })
         card = <div className={[classes.fullCard, props.active ? classes.active : null].join(' ')} onClick={props.click} id={props.id}>
+                <MovingColors color="white"/>
+                <MovingColors color="black"/>
                 <div className={classes.imgContainer}>
                 {renderImages}
-                <div className={classes.btn} onClick={(e) => {e.stopPropagation();props.cancelClicked()}}>cancel</div>
                 </div>
                 <div className={classes.productDetails}>
-                <h1>hello</h1>
-                <button>helo</button>
+                <div className={classes.text}>
+                <h2>{props.name}</h2>
+                <h3>{props.price} $</h3>
+                <p>{props.description}</p>
+                </div>
+                <div className={classes.btn} onClick={(e) => {e.stopPropagation();props.cancelClicked()}}>back <span><i class="fas fa-arrow-right"></i></span></div>
                 </div>
         </div>;
     }
