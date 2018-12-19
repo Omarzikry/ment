@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavsLinks from './NavsLinks/NavsLinks';
 import NavsTabs from './NavsTabs/NavsTabs';
 import classes from './Navs.css'
+import ExploreBtn from '../ExploreBtn/ExploreBtn';
 
 class Navs extends Component {
 
@@ -22,8 +23,9 @@ class Navs extends Component {
     render() {
         return (
             <div className={classes.navs}>
-                <NavsLinks callbackFromParent={this.myCallback} />
+            <NavsLinks callbackFromParent={this.myCallback} />
             <NavsTabs active={this.state.activeLink}/>
+            <ExploreBtn>Explore more</ExploreBtn>
             </div>
         );
     }

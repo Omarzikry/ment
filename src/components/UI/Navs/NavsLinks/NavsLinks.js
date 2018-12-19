@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from '../../../../axiosCarouselImages';
+import axios from '../../../../axios';
 import NavsLink from './NavsLink/NavsLink';
 import classes from './NavsLinks.css';
 class NavsLinks extends Component {

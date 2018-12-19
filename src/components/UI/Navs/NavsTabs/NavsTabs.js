@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from '../../../../axiosCarouselImages';
+import axios from '../../../../axios';
 import classes from './NavsTabs.css';
 import Spinner from '../../Spinner/Spinner';
 import Card from '../../Card/Card';

@@ -3,7 +3,7 @@ import classes from "./Carousel.css";
 import Slide from './Slide/Slide';
 //import LeftArrow from './Arrows/LeftArrow';
 //import RightArrow from './Arrows/RightArrow';
-import axios from '../../../axiosCarouselImages';
+import axios from '../../../axios';
 import Spinner from '../Spinner/Spinner';
 import Button from '../Button/Button';
 import playImg from '../../../assets/images/play.png'

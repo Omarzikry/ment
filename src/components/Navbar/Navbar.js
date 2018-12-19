@@ -4,6 +4,7 @@ import classes from './Navbar.css';
 import Navlink from './Navlink/Navlink';
 import ToggleBtn from '../UI/ToggleBtn/ToggleBtn';
 import BlueBox from '../UI/BlueBox/BlueBox';
+import {Route} from 'react-router-dom';
 const Navbar = () => {
     return (
         <header className={classes.Navbar}>
@@ -19,7 +20,7 @@ const Navbar = () => {
                     <Navlink goTo="/blog"><i className="fas fa-search"></i></Navlink>
                 </ul>
             </nav>
-            <BlueBox width="600px" height="500px" top="0" right="0" />
+            <Route path="/" exact render={props => <BlueBox width="600px" height="500px" top="0" right="0" />}/>
         </header>
     );
 }

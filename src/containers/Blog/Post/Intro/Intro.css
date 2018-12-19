@@ -1,0 +1,144 @@
+.Intro{
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10em;
+}
+.Intro h1{
+    font-family: Poppins ,sans-serif;
+    font-size: 55px;
+    text-transform: capitalize;
+    font-weight: 400;
+    position: relative;
+    display: inline
+}
+.Intro h1:after{
+    content: "";
+    background-color: black;
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    right: -80px;
+    bottom: 20px
+}
+.Intro h1:before{
+    content: "";
+    background-color: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    position: absolute;
+    right: -6px;
+    bottom: 20px;
+}
+
+.circleBtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    cursor: pointer;
+}
+.circleBtn img{
+    max-width: 100%;
+}
+.profileImg{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.status{
+    position: absolute;
+    top: 15px;
+    left: -150px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: right
+}
+.status h3{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: Poppins,sans-serif;
+    font-weight: 500;
+    font-size: 14px
+}
+.date{
+    padding: 0;
+    margin: 0;
+    padding-top: 0.5em;
+    font-size: 9px;
+    font-family: Nunito,sans-serif;
+    font-weight: 400;
+    color: #77777e
+}
+.text{
+    padding-right: 0.5em;
+}
+.Intro h2{
+    font-family: Nunito,sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+.introParagraph{
+    color: #77777e;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding-top: 3em;
+}
+
+
+@media only screen and (max-width: 768px){
+    .Intro{
+        width: 90%
+    }
+    .Intro h1{
+        font-size: 20px
+    }
+    .Intro h1:after{
+        display: none
+    }
+    .Intro h1:before{
+        bottom: 6px;
+        height: 4px;
+        width: 4px;
+        border-radius: 2px
+    }
+    .status{
+        top: -50px;
+        left: initial;
+        text-align: left
+    }
+    .status h3{
+        font-size: 10px
+    }
+    .date{
+        font-size: 8px
+    }
+    .circleBtn{
+        margin: 0;
+        margin-left: 0.5em;
+        width: 25px;
+        height: 25px;
+    }
+    .profileImg{
+        width: 25px;
+        height: 25px;
+    }
+    .btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .introParagraph{
+        padding-top: 0.5em;
+    }
+}
