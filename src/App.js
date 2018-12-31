@@ -14,10 +14,10 @@ class App extends Component {
         <Layout>
         <Switch>
           <Route path="/blog" component={Blog} />
-          <Route path="/" exact render={props => {
+          <Route path="/" exact render={() => {
             return (
               <Fragment>
-              <Carousel />
+              <Carousel auto={true}/>
               <Navs />
             </Fragment>
             );

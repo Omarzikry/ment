@@ -1,13 +1,55 @@
-import React from 'react';
-import Post from './Post/Post';
-import {Route} from 'react-router-dom';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actionCreators from '../../store/actions/index';
+import Spinner from '../../components/UI/Spinner/Spinner';
+class Blog extends Component {
+    componentDidMount(){
+        this.props.onFetchArticles()
+    }
 
-const Blog = () => {
-    return (
-        <div>
-            <Route path="/blog/:id" component={Post}/>
-        </div>
-    );
+
+    handleClick = (id) => {
+        this.props.history.push('/blog/' + id)
+    }
+
+    style = {
+        paddingTop: '300px'
+    }
+
+    render() {
+
+        let posts = <Spinner />
+
+        if(!this.props.loading){
+            posts = this.props.articles.map(article => {
+                return(
+                    <div onClick={this.handleClick.bind(this , article.id)} key={article.id}>
+                        <h2>{article.title}</h2>
+                    </div>
+                );
+            })
+        }
+
+        return (
+            <div style={this.style}>
+                {posts}
+            </div>
+        );
+    }
 }
 
-export default Blog;
+const mapStateToProps = state => {
+    return {
+        articles: state.articles
+    }
+}
+const mapDispatchToProps = dispatch => {
+    return {
+        onFetchArticles: () => {
+            dispatch(actionCreators.fetchArticles())
+        }
+    }
+}
+
+export default connect(mapStateToProps , mapDispatchToProps)(Blog);
+
