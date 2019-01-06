@@ -87,6 +87,7 @@
     left: 0;
     top: 0;
     object-fit: cover;
+    object-position: 50% 0%;
 }
 
 .videoContainer:hover #play {
@@ -110,13 +111,15 @@
 /**************** Media Container **************/
 
 .mediaContainer {
-    height: 700px;
+    height: 90vh;
     width: 100vw;
     margin-top: 100px;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
 }
+
+/**************** Media Images **************/
 
 .mediaContainer img {
     position: absolute;
@@ -128,6 +131,8 @@
     transition: all 0.5s ease;
     opacity: 0;
 }
+
+/**************** Media Dots **************/
 
 .activeDots {
     z-index: 99;
@@ -153,7 +158,21 @@
     height: 100%;
 }
 
+/**************** Active Media **************/
+
 .activeMedia {
     transform: translateX(0%) !important;
     opacity: 1 !important;
+}
+
+/**************** Media query **************/
+
+@media only screen and (max-width: 768px) {
+    .mediaContainer {
+        height: 50vh;
+        margin-top: 10px;
+    }
+    #play {
+        opacity: 1;
+    }
 }

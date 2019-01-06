@@ -11,8 +11,10 @@ class BlogSlider extends Component {
   componentDidMount() {
     this.setState({ loading: false });
 
+    const { media } = this.props;
+
     //\\ ============ checks if media files has video then set hasVideo state ============ //\\
-    this.props.media.map(mediaFile => {
+    media.map(mediaFile => {
       if (mediaFile.includes(".mp4")) {
         this.setState({ hasVideo: true });
       }
@@ -20,7 +22,8 @@ class BlogSlider extends Component {
     });
   }
   componentDidUpdate(prevProps, prevState) {
-    if (this.state.hasVideo && prevState.hasVideo !== this.state.hasVideo) {
+    const { hasVideo } = this.state;
+    if (hasVideo && prevState.hasVideo !== hasVideo) {
       // ===== \\ PLAY BUTTON // ===== \\
       let playButton = document.getElementById(classes.play);
       let video = document.getElementById("video");
@@ -36,16 +39,36 @@ class BlogSlider extends Component {
           this.setState({ play: true });
         }
       });
+      video.addEventListener("ended", () => {
+        this.setState({ play: true });
+      });
     }
   }
 
   //\\ ============ handle active dot clicked ============ //\\
   handleClick = index => {
     this.setState({ currentMedia: index });
+    if (this.state.hasVideo) {
+      let video = document.getElementById("video");
+      video.pause();
+      this.setState({ play: true });
+    }
   };
 
   render() {
     const { loading, play, currentMedia } = this.state;
+    const { media, id, poster } = this.props;
+    const {
+      mediaContainer,
+      videoContainer,
+      activeMedia,
+      video,
+      strokesolid,
+      strokedotted,
+      dotsContainer,
+      currentDot,
+      activeDots
+    } = classes;
 
     //\\ ============ setting play icon ============ //\\
     let icon = (
@@ -81,24 +104,24 @@ class BlogSlider extends Component {
       );
     }
     return (
-      <div className={classes.mediaContainer}>
-        {this.props.media.map((mediaFile, index) => {
+      <div className={mediaContainer}>
+        {media.map((mediaFile, index) => {
           //\\ ============ Render Video ============ //\\
           if (mediaFile.includes(".mp4")) {
             return (
               <div
                 className={[
-                  classes.videoContainer,
-                  currentMedia === index ? classes.activeMedia : null
+                  videoContainer,
+                  currentMedia === index ? activeMedia : null
                 ].join(" ")}
-                key={this.props.id + mediaFile}
+                key={id + mediaFile}
               >
                 <video
+                  poster={poster}
                   muted
-                  poster={this.props.poster}
                   className={[
-                    classes.video,
-                    currentMedia === index ? classes.activeMedia : null
+                    video,
+                    currentMedia === index ? activeMedia : null
                   ].join(" ")}
                   id="video"
                 >
@@ -112,13 +135,13 @@ class BlogSlider extends Component {
                   viewBox="0 0 100 100"
                 >
                   <path
-                    className={classes.strokesolid}
+                    className={strokesolid}
                     fill="none"
                     stroke="#fff"
                     d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5"
                   />
                   <path
-                    className={classes.strokedotted}
+                    className={strokedotted}
                     fill="none"
                     stroke="#fff"
                     d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5"
@@ -134,20 +157,20 @@ class BlogSlider extends Component {
                 src={mediaFile}
                 alt={this.props.alt}
                 key={this.props.id + mediaFile}
-                className={currentMedia === index ? classes.activeMedia : null}
+                className={currentMedia === index ? activeMedia : null}
               />
             );
           }
         })}
 
         {/* //\\ ============ Render Dots ============ //\\ */}
-        <div className={classes.dotsContainer}>
-          {this.props.media.map((mediaFile, index) => {
+        <div className={dotsContainer}>
+          {media.map((mediaFile, index) => {
             return (
-              <span
+              <span8
                 className={[
-                  classes.activeDots,
-                  currentMedia === index ? classes.currentDot : null
+                  activeDots,
+                  currentMedia === index ? currentDot : null
                 ].join(" ")}
                 key={mediaFile + index}
                 onClick={this.handleClick.bind(this, index)}

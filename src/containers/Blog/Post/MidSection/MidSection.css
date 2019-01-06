@@ -1,0 +1,33 @@
+.text {
+  width: 35%;
+  margin: 0 auto;
+  color: #77777e;
+  font-size: 14px;
+  line-height: 1.5em;
+  position: relative;
+  left: 200px;
+  padding-top: 5em;
+}
+
+.text p {
+  margin-top: 2em;
+}
+
+.text a {
+  color: #1a1a1d;
+  font-family: Nunito, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.text a:after {
+  background-color: black;
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
