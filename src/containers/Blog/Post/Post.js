@@ -1,17 +1,84 @@
-import React, { Component } from 'react';
-import classes from './Post.css';
-import Intro from './Intro/Intro';
+import React, { Component, Fragment } from "react";
+import classes from "./Post.css";
+import Intro from "./Intro/Intro";
+import axios from "../../../axios";
+import Spinner from "../../../components/UI/Spinner/Spinner";
+import BlogSlider from "./Slider/Slider";
 class Post extends Component {
-    state = {
-        id: 1
+  state = {
+    loading: true
+  };
+  componentDidMount() {
+    const {
+      match: { params }
+    } = this.props;
+    axios
+      .get(`articles/${params.id}.json`)
+      .then(res => {
+        this.setState({ singlePostData: res.data, loading: false });
+        console.log(res);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
+  componentDidUpdate(prevProps, prevState) {
+    const {
+      match: { params }
+    } = this.props;
+    //\\ ============= Increment Post Views ============= //\\
+    if (prevState.singlePostData !== this.state.singlePostData) {
+      axios
+        .put(`articles/${params.id}.json`, {
+          ...this.state.singlePostData,
+          views: this.state.singlePostData.views + 1
+        })
+        .then(res => {
+          console.log(res);
+        })
+        .catch(err => {
+          console.log(err);
+        });
     }
-    render() {
-        return (
-            <div className={classes.post}>
-                <Intro title={this.props.match.params.id} />
-            </div>
-        );
-    }
+  }
+  render() {
+    const {
+        singlePostData: { ...singlePostData },
+        loading
+      } = this.state,
+      {
+        title,
+        introParagraph,
+        author,
+        authorImage,
+        media,
+        id,
+        videoPoster
+      } = singlePostData;
+    return (
+      <Fragment>
+        {!loading ? (
+          <div className={classes.post}>
+            <Intro
+              title={title}
+              intro={introParagraph}
+              author={author}
+              date={"22/11/2015"}
+              authorImage={authorImage}
+            />
+            <BlogSlider
+              media={media}
+              id={id}
+              alt={title}
+              poster={videoPoster}
+            />
+          </div>
+        ) : (
+          <Spinner />
+        )}
+      </Fragment>
+    );
+  }
 }
 
 export default Post;
