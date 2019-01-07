@@ -1,12 +1,17 @@
-.text {
-  width: 35%;
+.midSection {
+  display: flex;
+  justify-content: center;
+  width: 50%;
   margin: 0 auto;
+}
+
+.text {
+  margin: 0 10px;
   color: #77777e;
   font-size: 14px;
   line-height: 1.5em;
-  position: relative;
-  left: 200px;
-  padding-top: 5em;
+  padding-top: 100px;
+  width: 100%;
 }
 
 .text p {
@@ -30,4 +35,76 @@
   position: absolute;
   left: 0;
   bottom: -1px;
+}
+
+/*quote container*/
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.status p {
+  margin: 0;
+  padding: 0;
+}
+
+.status img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: block;
+  margin-left: 10px;
+}
+
+.statusDescribtion {
+  text-align: right;
+}
+
+.statusDescribtion h2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  color: #1a1a1d;
+  font-size: 13px;
+  margin: 0;
+}
+
+.statusDescribtion p {
+  font-family: Nunito, sans-serif;
+  font-weight: 400;
+  color: #77777e;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.quoteContainer {
+  padding-top: 130px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quoteContent {
+  font-family: "Playfair Display", sans-serif;
+  color: #73737b;
+  font-size: 17px;
+  line-height: 1.5em;
+  margin: 0;
+  margin-left: 12px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .midSection {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .quoteContainer {
+    display: none;
+  }
+  .text {
+    padding-top: 0px;
+  }
 }

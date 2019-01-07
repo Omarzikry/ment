@@ -5,6 +5,7 @@ import axios from "../../../axios";
 import Spinner from "../../../components/UI/Spinner/Spinner";
 import BlogSlider from "./Slider/Slider";
 import MidSection from "./MidSection/MidSection";
+import Trending from "./Trending/Trending";
 class Post extends Component {
   state = {
     loading: true
@@ -42,7 +43,25 @@ class Post extends Component {
           console.log(err);
         });
     }
+    //\\ ============= Get the New Post ========== //\\
+    if (prevProps.match.params !== this.props.match.params) {
+      axios
+        .get(`articles/${params.id}.json`)
+        .then(res => {
+          this.setState({
+            singlePostData: res.data,
+            loading: false
+          });
+          console.log(res);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }
   }
+  trendingClickHandler = id => {
+    this.props.history.push("/blog/" + id);
+  };
   render() {
     const {
         singlePostData: { ...singlePostData },
@@ -56,7 +75,8 @@ class Post extends Component {
         media,
         id,
         videoPoster,
-        content
+        content,
+        quoteData
       } = singlePostData;
     return (
       <Fragment>
@@ -74,8 +94,13 @@ class Post extends Component {
               id={id}
               alt={title}
               poster={videoPoster}
+              key={id + authorImage}
             />
-            <MidSection content={content} />
+            <MidSection content={content} quoteData={quoteData} />
+            <Trending
+              history={this.props.history}
+              click={this.trendingClickHandler}
+            />
           </div>
         ) : (
           <Spinner />

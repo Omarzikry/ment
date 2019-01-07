@@ -9,7 +9,7 @@ class BlogSlider extends Component {
   };
 
   componentDidMount() {
-    this.setState({ loading: false });
+    this.setState({ loading: false, hasVideo: false });
 
     const { media } = this.props;
 
@@ -167,7 +167,7 @@ class BlogSlider extends Component {
         <div className={dotsContainer}>
           {media.map((mediaFile, index) => {
             return (
-              <span8
+              <div
                 className={[
                   activeDots,
                   currentMedia === index ? currentDot : null
