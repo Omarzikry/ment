@@ -36,6 +36,7 @@ class Trending extends Component {
                 if (!mediaFile.includes(".mp4")) {
                   return (
                     <div
+                      key={article.id}
                       className={classes.imageContainerBig}
                       //   onClick={this.handleClick.bind(this, article.id)}
                     >
@@ -55,10 +56,24 @@ class Trending extends Component {
                 if (!mediaFile.includes(".mp4")) {
                   return (
                     <div
+                      key={article.id + 1}
                       className={classes.imageContainerSmall}
                       //   onClick={this.handleClick.bind(this, article.id)}
                     >
                       <img src={mediaFile} />
+                      <TrendingLabel top="2px" right="2px" />
+                    </div>
+                  );
+                } else {
+                  return (
+                    <div
+                      key={article.id + 1}
+                      className={classes.imageContainerSmall}
+                      //   onClick={this.handleClick.bind(this, article.id)}
+                    >
+                      <video>
+                        <source src={mediaFile} />
+                      </video>
                       <TrendingLabel top="2px" right="2px" />
                     </div>
                   );

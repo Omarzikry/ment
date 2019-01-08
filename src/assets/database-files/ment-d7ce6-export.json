@@ -1,0 +1,279 @@
+{
+  "articles" : [ {
+    "author" : "Maia Diab",
+    "authorImage" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/author2.jpeg?alt=media&token=6c4422c0-d915-4c49-8e6f-4d65d9419a3b",
+    "content" : "<p>You can reset your vibration from a negative one to a positive one by simply choosing different words and different thoughts. It’s as easy as asking yourself, “So what do I want?” As I’ve said before, when you talk about what you don’t want and then talk about what you do want the words change.</p><p><a>@Mass Impressions </a> When the words change the vibration changes and you can only hold one vibration at a time. In other words, you are resetting your vibration.</p><p>The best news of all is that the <a>Law of Attraction</a> doesn’t remember what vibration you were sending out five minutes ago, five days ago, five months ago or 50 years ago. And the Law of Attraction doesn’t keep score of how long you may have been sending out or emitting a vibration. It’s only checking on the vibration you are offering right now in this very moment.</p>",
+    "createdDate" : "1545142913948",
+    "id" : "0",
+    "introParagraph" : "Gigi Hadid was born in Los Angeles, California to parents, Yolanda Hadid and Mohamed Hadid, on 23rd April, 1995. She began her modeling career she was just 2 years old after she was discovered by Paul Marciano, of Guess, she started with Baby Guess, after which she stopped so she could concentrate in school, she eventually got back, continued working with them.She made her acting debut in 2011 when she starred in a short movie called Virgin Eyes (2011) as Andrea. She is best known for being a Sports illustrated model and for her recurring role on The Real Housewives of Beverly Hills (2010) since 2012.",
+    "media" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/11th%20December%20_%20Gigi%20Hadid%20by%20Phil%20Poynter%20_%20Love%20Advent%202017%20(%201080%20X%201920%2060fps%20)_Trim%20(1).mp4?alt=media&token=5df5267a-19bb-4e20-9637-317bdbfeb11d", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/gigi16-1.jpg?alt=media&token=9a4c6ce8-1f9c-4c7d-ba0e-cd46361184bc", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/gigi23-1.jpg?alt=media&token=49d68c65-1be1-4a1e-bbf9-5aca8e178986", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/gigi7.jpg?alt=media&token=dade71d7-fe7b-474f-a27d-71a4474b84cf" ],
+    "quoteData" : {
+      "quoteAuthorImage" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/muhammad_ali_photo_by_stanley_weston_archive_photos_getty_482857506.jpg?alt=media&token=34bc914b-93ed-438f-baa1-ce1caafd0fd0",
+      "quoteAuthorName" : "Muhammad Ali",
+      "quoteAuthorPosition" : "Boxer",
+      "quoteContent" : "Don’t count the days; make the days count."
+    },
+    "tags" : [ "beauty salon", "beauty", "skin", "hair" ],
+    "title" : "Control Your Own Level Of Motivation",
+    "videoPoster" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/gigi.jpg?alt=media&token=d5e3deac-fa68-47ed-9a63-abfe17839c59",
+    "views" : 361
+  }, {
+    "author" : "Max Falko",
+    "authorImage" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/author1.jpeg?alt=media&token=8a770854-6eb9-4ae5-92e4-e5f780d9b74b",
+    "content" : "<p>Content</p>",
+    "createdDate" : "1545142913948",
+    "id" : "1",
+    "introParagraph" : "Hello, this is the intro before the img",
+    "media" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/slide6.jpg?alt=media&token=34124ee3-11a6-421c-ab34-7abd864435b1", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/slide9.jpg?alt=media&token=bed1c25c-8163-4fe6-9e8f-be3d26c22ead", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/slide4.jpg?alt=media&token=ce497288-900d-4d39-9b0c-13701a48078f" ],
+    "tags" : [ "beauty salon", "beauty", "skin", "hair" ],
+    "title" : "5 Reasons To Keep Your Beauty Salon Reservation",
+    "views" : 130
+  } ],
+  "categories" : {
+    "catigory1" : {
+      "id" : "1",
+      "name" : "formal"
+    },
+    "catigory2" : {
+      "id" : "2",
+      "name" : "casual"
+    },
+    "catigory3" : {
+      "id" : "3",
+      "name" : "swim suits"
+    },
+    "catigory4" : {
+      "id" : "4",
+      "name" : "socks"
+    }
+  },
+  "images" : {
+    "image1" : {
+      "alt" : "white hair girl",
+      "firstName" : "Maia",
+      "id" : 1,
+      "job" : "british model",
+      "lastName" : "Anderson",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/slide4.jpg?alt=media&token=ce497288-900d-4d39-9b0c-13701a48078f"
+    },
+    "image2" : {
+      "alt" : "guy in the dark",
+      "firstName" : "Max",
+      "id" : 2,
+      "job" : "photographer",
+      "lastName" : "Rafaeal",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/slide9.jpg?alt=media&token=bed1c25c-8163-4fe6-9e8f-be3d26c22ead"
+    },
+    "image3" : {
+      "alt" : "sporty girl",
+      "firstName" : "Gigi",
+      "id" : 3,
+      "job" : "fitness instructor",
+      "lastName" : "Hadid",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/slide8.jpg?alt=media&token=8222defc-4387-4287-abd9-fc2caca449ab"
+    }
+  },
+  "products" : {
+    "product1" : {
+      "Brand" : "Nike",
+      "category" : "casual",
+      "categoryId" : "2",
+      "description" : "Rib trim flare sleeves add a sporty-meets-femme twist to this super soft sweater. Foldover cowl neck. Long sleeves.Rib trim flare sleeves add a sporty-meets-femme twist to this super soft sweater. Foldover cowl neck.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater3.jpg?alt=media&token=e8d3347e-58dc-4918-a8ba-cc9ed0021a7e", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater2.jpg?alt=media&token=8d541e7c-cf8c-4538-a094-e17055c84ea0", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater.jpg?alt=media&token=1e6cde7e-db5d-44a2-9ba8-0c513243b9bb" ],
+      "gender" : "female",
+      "id" : "1",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home.jpg?alt=media&token=e7e3fe10-4ea1-49b6-acce-55699cf5389d",
+      "name" : "textured weave sweater",
+      "price" : "199.5"
+    },
+    "product10" : {
+      "Brand" : "Nike",
+      "category" : "swim suits",
+      "categoryId" : "3",
+      "gender" : "female",
+      "id" : "9",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home7.jpg?alt=media&token=8ac36434-343b-49d7-be4d-feb8131b3bbd",
+      "name" : "women sweater black",
+      "price" : "299.5"
+    },
+    "product11" : {
+      "Brand" : "Nike",
+      "category" : "socks",
+      "categoryId" : "4",
+      "gender" : "female",
+      "id" : "9",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home7.jpg?alt=media&token=8ac36434-343b-49d7-be4d-feb8131b3bbd",
+      "name" : "women sweater black",
+      "price" : "389.5"
+    },
+    "product12" : {
+      "Brand" : "polo",
+      "category" : "formal",
+      "categoryId" : "1",
+      "color" : "white",
+      "description" : "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal.jpg?alt=media&token=2f6c8221-05fc-412e-bff2-248ad91a61a5", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal2.jpg?alt=media&token=39cfa1f8-a892-469a-b089-942e492a91a2", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal1.jpg?alt=media&token=21866a07-5f36-4fdc-b34d-32000cc106c1" ],
+      "gender" : "male",
+      "id" : "11",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-1.jpg?alt=media&token=381a6b82-04b6-4615-b049-fe6884420cea",
+      "name" : "white shirt",
+      "price" : "599.9"
+    },
+    "product13" : {
+      "Brand" : "armani",
+      "category" : "formal",
+      "categoryId" : "1",
+      "color" : "Dark blue",
+      "description" : "Blazer with Bi-Stretch + Easy Care technical features. Notched lapels and buttonhole pin. Long sleeves. Two front flap pockets. Chest pocket with contrasting pocket square. Lined. Two interior pockets. Back vent. Buttoned cuffs. Front button closure.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal10.jpg?alt=media&token=e8c36052-8f4a-4435-b95e-adc824582535", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal11.jpg?alt=media&token=552d2c97-19be-42c1-b636-250244aad919", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal12.jpg?alt=media&token=add6f6b6-f7e5-4dda-a077-6290f1c7a05e" ],
+      "gender" : "male",
+      "id" : "12",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-3.jpg?alt=media&token=7d2b7938-0fc0-43d0-b193-621f80665042",
+      "name" : "traveler suit",
+      "price" : "799"
+    },
+    "product14" : {
+      "Brand" : "eagel",
+      "category" : "formal",
+      "categoryId" : "1",
+      "color" : "Dark blue",
+      "description" : "Two toned textured weave jacket with pointed lapels and long sleeves. Two front pockets. Chest pocket. Lined. Interior pocket. Two back vents. Front button closure. Buttoned cuffs.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal14.jpg?alt=media&token=81d0c2af-365f-49ef-b5b3-7a3e86b92d92", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal13.jpg?alt=media&token=a03886f1-18b1-4e05-a44a-a9a9648e1013", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal15.jpg?alt=media&token=e5146001-af52-4b44-ae7f-aa850c861c0e" ],
+      "gender" : "male",
+      "id" : "13",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-4.jpg?alt=media&token=28a0a2c7-f70a-4102-9d07-1f3d43f595cb",
+      "name" : "two toned blue suit",
+      "price" : "765"
+    },
+    "product15" : {
+      "Brand" : "armani",
+      "category" : "formal",
+      "categoryId" : "1",
+      "color" : "Dark blue",
+      "description" : "Long loose fit blazer with lapel collar and long sleeves. Front flap pockets. Contrasting front button closure.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal19.jpg?alt=media&token=7c2ba92c-f426-4dd3-a7ff-dcbd49d0c9b2", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal20.jpg?alt=media&token=bcc44f88-8628-4385-94d2-4ccb5bd26a4a", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal24.jpg?alt=media&token=0217e777-70cf-4d18-967c-12ab2bff6dc2", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal25.jpg?alt=media&token=ec93e67d-763d-4666-a99c-0de5d279c37c" ],
+      "gender" : "female",
+      "id" : "14",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-6.jpg?alt=media&token=233e00d7-a601-46a9-a3de-ec1cf62a2861",
+      "name" : "oversized plaid blazer",
+      "price" : "899"
+    },
+    "product16" : {
+      "Brand" : "polo",
+      "category" : "formal",
+      "categoryId" : "1",
+      "color" : "red",
+      "description" : "Round neck long-sleeved blazer. Front pockets with ruffled flap. Features front buttons in the same fabric.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal21.jpg?alt=media&token=eaa540c6-5aee-4124-8bec-e5073f821667", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal22.jpg?alt=media&token=b61b8200-b0a8-4289-8a2a-de1b99b59317", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal23.jpg?alt=media&token=d0beec24-e631-444e-8466-55f714ac54a4", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal26.jpg?alt=media&token=5c33b453-a340-4fcc-a98a-9d59606f4815", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal27.jpg?alt=media&token=eb154221-d6ab-4710-a6f1-faa745b63f98" ],
+      "gender" : "female",
+      "id" : "15",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-7.jpg?alt=media&token=78d06229-0ef9-41dc-969d-832a68f509fd",
+      "name" : "ruffled pocket blazer",
+      "price" : "776"
+    },
+    "product2" : {
+      "Brand" : "Armani",
+      "category" : "casual",
+      "categoryId" : "2",
+      "color" : "DARK BLUE",
+      "description" : "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/basic-sweater3.jpg?alt=media&token=a19bde43-36d7-4288-a256-c75e222ee894", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/basic-sweater.jpg?alt=media&token=6d6a9e94-b1f1-4796-bc33-d535bd71b510", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/basic-sweater1.jpg?alt=media&token=ca63db44-185b-4989-938d-bdc4fd10ccc4" ],
+      "gender" : "female",
+      "id" : "2",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/basic-sweater-small.jpg?alt=media&token=8c0ebb0f-8850-451e-afb1-d526a6bc75ab",
+      "name" : "BASIC SWEATER",
+      "price" : "150"
+    },
+    "product3" : {
+      "Brand" : "lc weikiki",
+      "category" : "casual",
+      "categoryId" : "2",
+      "color" : "DARK BLUE",
+      "description" : "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater15.jpg?alt=media&token=81d47ce6-2cc4-4a7d-929c-25bc1c76c63e", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater14.jpg?alt=media&token=73bc4604-677c-40fa-b546-39c51e142faa", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater13.jpg?alt=media&token=20b9ac4b-3a35-4e5f-9dde-ae959257f7e3" ],
+      "gender" : "male",
+      "id" : "3",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home2.jpg?alt=media&token=f314fe14-f924-4887-a62c-2cf89311223c",
+      "name" : "slim fit henley",
+      "price" : "197.5"
+    },
+    "product4" : {
+      "Brand" : "Max",
+      "category" : "casual",
+      "categoryId" : "2",
+      "color" : "matte black",
+      "description" : "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater4.jpg?alt=media&token=962b053a-094d-415a-abe5-d8d3aa3ccac3", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater6.jpg?alt=media&token=422546aa-aa78-48f7-ab90-96d912efe378", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater5.jpg?alt=media&token=cc4df480-d284-4168-b142-f2d97ea87900" ],
+      "gender" : "female",
+      "id" : "4",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home3.jpg?alt=media&token=bd6325df-26cf-4f50-9c82-a67d0dbdb8c1",
+      "name" : "slim fit shirt",
+      "price" : "201.5"
+    },
+    "product5" : {
+      "Brand" : "Nike",
+      "category" : "casual",
+      "categoryId" : "2",
+      "color" : "matte black",
+      "description" : "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater10.jpg?alt=media&token=7d3aac7e-ce55-4660-9433-010ca24e52fc", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater12.jpg?alt=media&token=e38970c2-d7d2-449a-863d-2c2342f6fe99", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater11.jpg?alt=media&token=5f8459c2-4946-46cd-b741-75f221819401" ],
+      "gender" : "male",
+      "id" : "5",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home4.jpg?alt=media&token=fa5ea8a7-0083-4c63-a240-d5c484e179f1",
+      "name" : "textured weave shirt",
+      "price" : "167.7"
+    },
+    "product6" : {
+      "Brand" : "Nike",
+      "category" : "casual",
+      "categoryId" : "2",
+      "color" : "Light pink",
+      "description" : "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater16.jpg?alt=media&token=796a9194-1a04-48fa-88ad-e807cc13854c" ],
+      "gender" : "female",
+      "id" : "6",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home5.jpg?alt=media&token=ba331b83-51ff-48b3-9682-9780f1fd8e7f",
+      "name" : "princey sweater",
+      "price" : "198.5"
+    },
+    "product7" : {
+      "Brand" : "Eagle",
+      "category" : "casual",
+      "categoryId" : "2",
+      "color" : "white",
+      "description" : "Turtle neck white T-shirt that looks awesome on any pants",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater17.jpg?alt=media&token=8d279740-9eda-40cc-b292-eb8cbba114e7" ],
+      "gender" : "female",
+      "id" : "7",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home6.jpg?alt=media&token=95b1bccc-7a29-414c-b1d2-abe14ac020ad",
+      "name" : "turtle neck shirt",
+      "price" : "99.9"
+    },
+    "product8" : {
+      "Brand" : "Nike",
+      "category" : "casual",
+      "categoryId" : "2",
+      "color" : "matte black",
+      "description" : "Knit sweater with round neck and long sleeves. Side vents at hem. Ribbed trim.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater18.jpg?alt=media&token=a7326ea4-e520-400c-8aff-91bec4b081d8", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater20.jpg?alt=media&token=cf3ab990-3df6-46bf-89d4-d40312f0965d", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater19.jpg?alt=media&token=c2bd5806-fcad-44d1-b912-413d45ce7a8e" ],
+      "gender" : "female",
+      "id" : "8",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/sweater-home7.jpg?alt=media&token=8ac36434-343b-49d7-be4d-feb8131b3bbd",
+      "name" : "weave jacket",
+      "price" : "198"
+    },
+    "product9" : {
+      "Brand" : "polo",
+      "category" : "formal",
+      "categoryId" : "1",
+      "color" : "faded blue",
+      "description" : "Jacket made of textured weave fabric. Lapel collar and long sleeves. Front double welt pockets at hip and welt pocket at chest. Interior lining with pocket detail. Double back vent. Front button closure.",
+      "fullImages" : [ "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal4.jpg?alt=media&token=abf1ac74-07c2-43aa-b9cc-1ffc0dbe5cc9", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal6.jpg?alt=media&token=b4e991f3-9d91-4f77-a5a2-167f7af9b8ec", "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/formal28.jpg?alt=media&token=685af1a7-555f-4596-b60d-566865d0a244" ],
+      "gender" : "male",
+      "id" : "10",
+      "imageLink" : "https://firebasestorage.googleapis.com/v0/b/ment-d7ce6.appspot.com/o/form-.jpg?alt=media&token=509a3683-749c-44fa-b1d6-1452db7e9862",
+      "name" : "textured weave suit",
+      "price" : "468.5"
+    }
+  }
+}

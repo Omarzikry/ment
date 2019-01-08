@@ -6,6 +6,7 @@ import Spinner from "../../../components/UI/Spinner/Spinner";
 import BlogSlider from "./Slider/Slider";
 import MidSection from "./MidSection/MidSection";
 import Trending from "./Trending/Trending";
+import MovingColors from "../../../components/UI/MovingColors/MovingColors";
 class Post extends Component {
   state = {
     loading: true
@@ -18,7 +19,17 @@ class Post extends Component {
       .get(`articles/${params.id}.json`)
       .then(res => {
         this.setState({ singlePostData: res.data, loading: false });
-        console.log(res);
+        axios
+          .put(`articles/${params.id}.json`, {
+            ...this.state.singlePostData,
+            views: this.state.singlePostData.views + 1
+          })
+          .then(res => {
+            console.log(res);
+          })
+          .catch(err => {
+            console.log(err);
+          });
       })
       .catch(err => {
         console.log(err);
@@ -28,21 +39,23 @@ class Post extends Component {
     const {
       match: { params }
     } = this.props;
-    const { singlePostData } = this.state;
+    const { singlePostData, loading } = this.state;
     //\\ ============= Increment Post Views ============= //\\
-    if (prevState.singlePostData !== singlePostData) {
-      axios
-        .put(`articles/${params.id}.json`, {
-          ...this.state.singlePostData,
-          views: this.state.singlePostData.views + 1
-        })
-        .then(res => {
-          console.log(res);
-        })
-        .catch(err => {
-          console.log(err);
-        });
-    }
+    // if (
+    //   prevState.singlePostData !== singlePostData
+    // ) {
+    //   axios
+    //     .put(`articles/${params.id}.json`, {
+    //       ...this.state.singlePostData,
+    //       views: this.state.singlePostData.views + 1
+    //     })
+    //     .then(res => {
+    //       console.log(res);
+    //     })
+    //     .catch(err => {
+    //       console.log(err);
+    //     });
+    // }
     //\\ ============= Get the New Post ========== //\\
     if (prevProps.match.params !== this.props.match.params) {
       axios
@@ -80,6 +93,8 @@ class Post extends Component {
       } = singlePostData;
     return (
       <Fragment>
+        <MovingColors color="white" key={id} />
+        <MovingColors color="black" key={id + 1} />
         {!loading ? (
           <div className={classes.post}>
             <Intro
@@ -97,10 +112,7 @@ class Post extends Component {
               key={id + authorImage}
             />
             <MidSection content={content} quoteData={quoteData} />
-            <Trending
-              history={this.props.history}
-              click={this.trendingClickHandler}
-            />
+            <Trending click={this.trendingClickHandler} />
           </div>
         ) : (
           <Spinner />
