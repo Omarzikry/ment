@@ -4,6 +4,7 @@ import * as actionCreators from "../../../../store/actions/index";
 import classes from "./Trending.css";
 import TrendingLabel from "../../../../components/UI/TrendingLabel/TrendingLabel";
 import ReadMoreButton from "../../../../components/UI/ReadMoreButton/ReadMoreButton";
+import Video from "../../../../components/UI/Video/Video";
 class Trending extends Component {
   componentDidMount() {
     this.props.onFetchArticles();
@@ -13,7 +14,8 @@ class Trending extends Component {
   //   };
   render() {
     let TrendingPost = null;
-    if (!this.props.loading) {
+    const { loading } = this.props;
+    if (!loading) {
       const articles = this.props.articles;
       const articlesViewsArray = [];
       for (let article of articles) {
@@ -71,9 +73,11 @@ class Trending extends Component {
                       className={classes.imageContainerSmall}
                       //   onClick={this.handleClick.bind(this, article.id)}
                     >
-                      <video>
-                        <source src={mediaFile} />
-                      </video>
+                      <Video
+                        loading={loading}
+                        mediaFile={mediaFile}
+                        poster={article.poster}
+                      />
                       <TrendingLabel top="2px" right="2px" />
                     </div>
                   );

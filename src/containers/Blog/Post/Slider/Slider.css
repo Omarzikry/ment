@@ -1,181 +1,71 @@
-/***************** Video Styles *****************/
-
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.strokedotted {
-  opacity: 0;
-  stroke-dasharray: 4, 5;
-  stroke-width: 1px;
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-animation: spin 4s infinite linear;
-  animation: spin 4s infinite linear;
-  transition: opacity 1s ease, stroke-width 1s ease;
-}
-
-.strokesolid {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 300;
-  stroke-width: 4px;
-  transition: stroke-dashoffset 1s ease, opacity 1s ease;
-}
-
-.icon {
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  transition: -webkit-transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
-}
-
-.iconPause {
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  transition: -webkit-transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
-  transform: translateX(1.5px) translateY(2px) scale(0.8);
-}
-
-#play:hover .strokedotted {
-  stroke-width: 4px;
-  opacity: 1;
-}
-
-#play:hover .strokesolid {
-  opacity: 0;
-  stroke-dashoffset: 300;
-}
-
-#play:hover .icon {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-#play:hover .iconPause {
-  -webkit-transform: scale(0.85);
-  transform: scale(0.85) translateX(2px) translateY(3px);
-}
-
-#play {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
-  opacity: 0;
-  transition: all 0.5s ease;
-}
-
-.video {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  object-fit: cover;
-  object-position: 50% 0%;
-}
-
-.videoContainer:hover #play {
-  opacity: 1;
-}
-
-.videoContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  transform: translateX(-100%);
-  transition: all 0.5s ease;
-  opacity: 0;
-}
-
 /**************** Media Container **************/
 
 .mediaContainer {
-  height: 90vh;
-  width: 100vw;
-  margin-top: 100px;
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
+    height: 90vh;
+    width: 100vw;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 /**************** Media Images **************/
 
 .mediaContainer img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 0%;
-  transform: translateX(-100%);
-  transition: all 0.5s ease;
-  opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0%;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    opacity: 0;
 }
 
 /**************** Media Dots **************/
 
 .activeDots {
-  z-index: 99;
-  position: relative;
-  display: block;
-  background-color: white;
-  opacity: 0.5;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  margin: 30px 10px;
-  -webkit-box-shadow: 0px 0px 7px 2px rgba(184, 184, 184, 0.31);
-  -moz-box-shadow: 0px 0px 7px 2px rgba(184, 184, 184, 0.31);
-  box-shadow: 0px 0px 7px 2px rgba(184, 184, 184, 0.31);
+    z-index: 99;
+    position: relative;
+    display: block;
+    background-color: white;
+    opacity: 0.5;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 30px 10px;
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(184, 184, 184, 0.31);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(184, 184, 184, 0.31);
+    box-shadow: 0px 0px 7px 2px rgba(184, 184, 184, 0.31);
 }
 
 .currentDot {
-  opacity: 1;
-  transform: scale(1.3);
+    opacity: 1;
+    transform: scale(1.3);
 }
 
 .dotsContainer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
 }
 
 /**************** Active Media **************/
 
 .activeMedia {
-  transform: translateX(0%) !important;
-  opacity: 1 !important;
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
 }
 
 /**************** Media query **************/
 
 @media only screen and (max-width: 768px) {
-  .mediaContainer {
-    height: 30vh;
-    margin-top: 10px;
-  }
-  #play {
-    opacity: 1;
-  }
+    .mediaContainer {
+        height: 30vh;
+        margin-top: 10px;
+    }
+    #play {
+        opacity: 1;
+    }
 }
