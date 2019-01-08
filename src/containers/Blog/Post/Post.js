@@ -34,11 +34,6 @@ class Post extends Component {
       .catch(err => {
         console.log(err);
       });
-    if (!this.state.loading) {
-      const post = document.getElementById(classes.post);
-      post.scrollTop = "0px";
-      debugger;
-    }
   }
   componentDidUpdate(prevProps, prevState) {
     const {
@@ -75,6 +70,7 @@ class Post extends Component {
           console.log(err);
         });
     }
+    window.scrollTo(0, 0);
   }
   trendingClickHandler = id => {
     this.props.history.push("/blog/" + id);
