@@ -1,0 +1,24 @@
+.endSection {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.endSection h3 {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.endSection p {
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #77777e;
+}
+
+@media only screen and (max-width: 768px) {
+    .endSection {
+        width: 80%
+    }
+}

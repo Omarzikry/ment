@@ -7,6 +7,8 @@ import BlogSlider from "./Slider/Slider";
 import MidSection from "./MidSection/MidSection";
 import Trending from "./Trending/Trending";
 import MovingColors from "../../../components/UI/MovingColors/MovingColors";
+import EndSection from "./EndSection/EndSection";
+import SimilarPosts from "./SimilarPosts/SimilarPosts";
 class Post extends Component {
   state = {
     loading: true
@@ -89,7 +91,9 @@ class Post extends Component {
         id,
         videoPoster,
         content,
-        quoteData
+        quoteData,
+        endContent,
+        endContentTitle
       } = singlePostData;
     return (
       <Fragment>
@@ -117,6 +121,8 @@ class Post extends Component {
             />
             <MidSection content={content} quoteData={quoteData} />
             <Trending click={this.trendingClickHandler} />
+            <EndSection content={endContent} title={endContentTitle} />
+            <SimilarPosts click={this.trendingClickHandler} />
           </div>
         ) : (
           <Spinner />
