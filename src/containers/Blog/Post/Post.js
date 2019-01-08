@@ -34,12 +34,16 @@ class Post extends Component {
       .catch(err => {
         console.log(err);
       });
+    if (!this.state.loading) {
+      const post = document.getElementById(classes.post);
+      post.scrollTop = "0px";
+      debugger;
+    }
   }
   componentDidUpdate(prevProps, prevState) {
     const {
       match: { params }
     } = this.props;
-    const { singlePostData, loading } = this.state;
     //\\ ============= Increment Post Views ============= //\\
     // if (
     //   prevState.singlePostData !== singlePostData
@@ -93,8 +97,12 @@ class Post extends Component {
       } = singlePostData;
     return (
       <Fragment>
-        <MovingColors color="white" key={id} />
-        <MovingColors color="black" key={id + 1} />
+        {!loading ? (
+          <div>
+            <MovingColors color="white" key={id} />
+            <MovingColors color="black" key={id + 1} />
+          </div>
+        ) : null}
         {!loading ? (
           <div className={classes.post}>
             <Intro
