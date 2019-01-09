@@ -8,7 +8,7 @@ import MidSection from "./MidSection/MidSection";
 import Trending from "./Trending/Trending";
 import MovingColors from "../../../components/UI/MovingColors/MovingColors";
 import EndSection from "./EndSection/EndSection";
-import SimilarPosts from "./SimilarPosts/SimilarPosts";
+import SimilarPosts from "../../../components/SimilarPosts/SimilarPosts";
 class Post extends Component {
   state = {
     loading: true
@@ -36,29 +36,15 @@ class Post extends Component {
       .catch(err => {
         console.log(err);
       });
+    //console.log(this.props.history.location.key);
   }
   componentDidUpdate(prevProps, prevState) {
     const {
       match: { params }
     } = this.props;
-    //\\ ============= Increment Post Views ============= //\\
-    // if (
-    //   prevState.singlePostData !== singlePostData
-    // ) {
-    //   axios
-    //     .put(`articles/${params.id}.json`, {
-    //       ...this.state.singlePostData,
-    //       views: this.state.singlePostData.views + 1
-    //     })
-    //     .then(res => {
-    //       console.log(res);
-    //     })
-    //     .catch(err => {
-    //       console.log(err);
-    //     });
-    // }
-    //\\ ============= Get the New Post ========== //\\
-    if (prevProps.match.params !== this.props.match.params) {
+    if (prevProps.match.params.id !== this.props.match.params.id) {
+      window.scrollTo(0, 0);
+      //\\ ============= Get the New Post ========== //\\
       axios
         .get(`articles/${params.id}.json`)
         .then(res => {
@@ -72,7 +58,6 @@ class Post extends Component {
           console.log(err);
         });
     }
-    window.scrollTo(0, 0);
   }
   trendingClickHandler = id => {
     this.props.history.push("/blog/" + id);
@@ -122,7 +107,10 @@ class Post extends Component {
             <MidSection content={content} quoteData={quoteData} />
             <Trending click={this.trendingClickHandler} />
             <EndSection content={endContent} title={endContentTitle} />
-            <SimilarPosts click={this.trendingClickHandler} />
+            <SimilarPosts
+              history={this.props.history}
+              title="You may also like"
+            />
           </div>
         ) : (
           <Spinner />

@@ -1,30 +1,36 @@
-import React, { Component ,Fragment } from 'react';
-import './normalize.css';
-import { BrowserRouter , Route , Switch} from "react-router-dom"
-import Carousel from './components/UI/Carousel/Carousel';
-import Navs from './components/UI/Navs/Navs';
-import Layout from './containers/Layout/Layout';
-import Blog from './containers/Blog/Blog';
+import React, { Component, Fragment } from "react";
+import "./normalize.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Carousel from "./components/UI/Carousel/Carousel";
+import Navs from "./components/UI/Navs/Navs";
+import Layout from "./containers/Layout/Layout";
+import Blog from "./containers/Blog/Blog";
+import SimilarPosts from "./components/SimilarPosts/SimilarPosts";
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <div>
-        <Layout>
-        <Switch>
-          <Route path="/blog" component={Blog} />
-          <Route path="/" exact render={() => {
-            return (
-              <Fragment>
-              <Carousel auto={true}/>
-              <Navs />
-            </Fragment>
-            );
-          }} />
-        </Switch>
-        </Layout>
-      </div>
+        <div>
+          <Layout>
+            <Switch>
+              <Route path="/blog" component={Blog} />
+              <Route
+                path="/"
+                exact
+                render={({ history }) => {
+                  return (
+                    <Fragment>
+                      <Carousel auto={true} />
+                      <Navs />
+                      <SimilarPosts history={history} title="Our Stories" />
+                    </Fragment>
+                  );
+                }}
+              />
+            </Switch>
+          </Layout>
+        </div>
       </BrowserRouter>
     );
   }

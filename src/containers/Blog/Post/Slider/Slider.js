@@ -24,14 +24,12 @@ class BlogSlider extends Component {
   handleClick = index => {
     this.setState({ currentMedia: index });
     if (this.state.hasVideo) {
-      let video = document.getElementById("video");
-      video.pause();
-      this.setState({ play: true });
+      this.setState({ stopVideo: true });
     }
   };
 
   render() {
-    const { loading, currentMedia } = this.state;
+    const { loading, currentMedia, stopVideo } = this.state;
     const { media, id, poster } = this.props;
     const {
       mediaContainer,
@@ -55,6 +53,7 @@ class BlogSlider extends Component {
                 key={id + mediaFile}
                 poster={poster}
                 externalClass={currentMedia === index ? activeMedia : null}
+                pauseVideo={stopVideo}
               />
             );
           } else {

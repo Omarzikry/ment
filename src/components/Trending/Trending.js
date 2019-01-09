@@ -26,19 +26,16 @@ class Trending extends Component {
         const imageSmall = article.media.slice(0, 1);
         const imageBig = article.media.slice(1, 2);
         if (heighestViews === article.views) {
-          console.log(article);
           TrendingPost = (
-            <div
-              className={classes.trendingContainer}
-              onClick={() => {
-                this.props.click(article.id);
-              }}
-            >
+            <div className={classes.trendingContainer}>
               {imageBig.map(mediaFile => {
                 if (!mediaFile.includes(".mp4")) {
                   return (
                     <div
                       key={article.id}
+                      onClick={() => {
+                        this.props.click(article.id);
+                      }}
                       className={classes.imageContainerBig}
                       //   onClick={this.handleClick.bind(this, article.id)}
                     >
@@ -48,21 +45,25 @@ class Trending extends Component {
                           {article.title}
                         </div>
                       </div>
-                      <img src={mediaFile} />
+                      <img src={mediaFile} alt={article.title} />
                       <ReadMoreButton bottom="0px" right="0px" />
                     </div>
                   );
                 }
+                return mediaFile;
               })}
               {imageSmall.map(mediaFile => {
                 if (!mediaFile.includes(".mp4")) {
                   return (
                     <div
                       key={article.id + 1}
+                      onClick={() => {
+                        this.props.click(article.id);
+                      }}
                       className={classes.imageContainerSmall}
                       //   onClick={this.handleClick.bind(this, article.id)}
                     >
-                      <img src={mediaFile} />
+                      <img src={mediaFile} alt={article.title} />
                       <TrendingLabel top="2px" right="2px" />
                     </div>
                   );
@@ -86,6 +87,7 @@ class Trending extends Component {
             </div>
           );
         }
+        return TrendingPost;
       });
     }
     return <div>{TrendingPost}</div>;

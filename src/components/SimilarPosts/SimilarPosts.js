@@ -1,15 +1,19 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import * as actionCreators from "../../../../store/actions/index";
+import * as actionCreators from "../../store/actions/index";
 import classes from "./SimilarPosts.css";
 class SimilarPosts extends Component {
   componentDidMount() {
     this.props.onFetchArticles();
   }
+  //\\ =========== routing to post id =========== //\\
+  clickHandler = id => {
+    this.props.history.push("/blog/" + id);
+  };
   render() {
     return (
       <Fragment>
-        <h2 className={classes.title}>You may also like</h2>
+        <h2 className={classes.title}>{this.props.title}</h2>
         <div className={classes.cardContainer}>
           {this.props.articles.map(article => {
             const articleMedia = article.media.slice(0, 1);
@@ -42,7 +46,7 @@ class SimilarPosts extends Component {
                     className={classes.articleTitle}
                     onClick={e => {
                       e.preventDefault();
-                      this.props.click(article.id);
+                      this.clickHandler(article.id);
                     }}
                   >
                     {article.title}

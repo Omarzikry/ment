@@ -1,46 +1,44 @@
 import React, { Component } from "react";
 import classes from "./Video.css";
 class Video extends Component {
-  state = {
-    play: true
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      play: true
+    };
+    this.video = React.createRef();
+  }
   componentDidUpdate(prevProps, prevState) {
-    // ===== \\ PLAY BUTTON // ===== \\
-    let playButton = document.getElementById(classes.play);
-    let video = document.getElementById("video");
-    // Event listener for the play/pause button
-    playButton.addEventListener("click", () => {
-      if (video.paused === true) {
-        // Play the video
-        video.play();
-        this.setState({ play: false });
-      } else {
-        // Pause the video
-        video.pause();
+    const video = this.video;
+    if (prevProps.pauseVideo !== this.props.pauseVideo) {
+      if (this.props.pauseVideo === true) {
+        video.current.pause();
         this.setState({ play: true });
       }
-    });
-    video.addEventListener("ended", () => {
-      this.setState({ play: true });
-    });
+    }
   }
+
+  //\\ ========== handle video click play/pause ========== //\\
+  handleVideoClick = () => {
+    const video = this.video;
+    if (video.current.paused === true) {
+      // Play the video
+      video.current.play();
+      this.setState({ play: false });
+    } else {
+      // Pause the video
+      video.current.pause();
+      this.setState({ play: true });
+    }
+  };
+  videoEndedHanlder = () => {
+    this.setState({ play: true });
+  };
+
   render() {
-    const {
-      loading,
-      currentMedia,
-      index,
-      mediaFile,
-      poster,
-      externalClass
-    } = this.props;
+    const { loading, index, mediaFile, poster, externalClass } = this.props;
     const { play } = this.state;
-    const {
-      videoContainer,
-      activeMedia,
-      video,
-      strokesolid,
-      strokedotted
-    } = classes;
+    const { videoContainer, video, strokesolid, strokedotted } = classes;
     //\\ ============ setting play icon ============ //\\
     let icon = (
       <path
@@ -80,7 +78,9 @@ class Video extends Component {
         key={index + mediaFile}
       >
         <video
+          onEnded={this.videoEndedHanlder}
           poster={poster}
+          ref={this.video}
           muted
           className={[video, externalClass].join(" ")}
           id="video"
@@ -88,6 +88,7 @@ class Video extends Component {
           <source src={mediaFile} type="video/mp4" />
         </video>
         <svg
+          onClick={this.handleVideoClick.bind(this)}
           id={classes.play}
           xmlns="http://www.w3.org/2000/svg"
           height="100"
