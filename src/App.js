@@ -6,6 +6,7 @@ import Navs from "./components/UI/Navs/Navs";
 import Layout from "./containers/Layout/Layout";
 import Blog from "./containers/Blog/Blog";
 import SimilarPosts from "./components/SimilarPosts/SimilarPosts";
+import BlogFeaturedGrid from "./components/BlogFeaturedGrid/BlogFeaturedGrid";
 
 class App extends Component {
   render() {
@@ -22,8 +23,9 @@ class App extends Component {
                   return (
                     <Fragment>
                       <Carousel auto={true} />
-                      <Navs />
+                      <Navs history={history} />
                       <SimilarPosts history={history} title="Our Stories" />
+                      <BlogFeaturedGrid />
                     </Fragment>
                   );
                 }}

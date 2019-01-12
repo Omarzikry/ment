@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classes from "./Video.css";
+import Spinner from "../Spinner/Spinner";
 class Video extends Component {
   constructor(props) {
     super(props);
@@ -73,42 +74,48 @@ class Video extends Component {
       );
     }
     return (
-      <div
-        className={[videoContainer, externalClass].join(" ")}
-        key={index + mediaFile}
-      >
-        <video
-          onEnded={this.videoEndedHanlder}
-          poster={poster}
-          ref={this.video}
-          muted
-          className={[video, externalClass].join(" ")}
-          id="video"
-        >
-          <source src={mediaFile} type="video/mp4" />
-        </video>
-        <svg
-          onClick={this.handleVideoClick.bind(this)}
-          id={classes.play}
-          xmlns="http://www.w3.org/2000/svg"
-          height="100"
-          width="100"
-          viewBox="0 0 100 100"
-        >
-          <path
-            className={strokesolid}
-            fill="none"
-            stroke="#fff"
-            d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5"
-          />
-          <path
-            className={strokedotted}
-            fill="none"
-            stroke="#fff"
-            d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5"
-          />
-          {icon}
-        </svg>
+      <div>
+        {!loading ? (
+          <div
+            className={[videoContainer, externalClass].join(" ")}
+            key={index + mediaFile}
+          >
+            <video
+              onEnded={this.videoEndedHanlder}
+              poster={poster}
+              ref={this.video}
+              muted
+              className={[video, externalClass].join(" ")}
+              id="video"
+            >
+              <source src={mediaFile} type="video/mp4" />
+            </video>
+            <svg
+              onClick={this.handleVideoClick.bind(this)}
+              id={classes.play}
+              xmlns="http://www.w3.org/2000/svg"
+              height="100"
+              width="100"
+              viewBox="0 0 100 100"
+            >
+              <path
+                className={strokesolid}
+                fill="none"
+                stroke="#fff"
+                d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5"
+              />
+              <path
+                className={strokedotted}
+                fill="none"
+                stroke="#fff"
+                d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5"
+              />
+              {icon}
+            </svg>
+          </div>
+        ) : (
+          <Spinner />
+        )}
       </div>
     );
   }

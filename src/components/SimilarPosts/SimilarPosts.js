@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import * as actionCreators from "../../store/actions/index";
 import classes from "./SimilarPosts.css";
+import Video from "../UI/Video/Video";
 class SimilarPosts extends Component {
   componentDidMount() {
     this.props.onFetchArticles();
@@ -26,9 +27,7 @@ class SimilarPosts extends Component {
                         key={article.id + mediaFile}
                         className={classes.videoContainer}
                       >
-                        <video>
-                          <source src={mediaFile} />
-                        </video>
+                        <Video mediaFile={mediaFile} poster={article.poster} />
                       </div>
                     );
                   } else {

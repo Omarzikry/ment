@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import * as actionCreators from "../../../../store/actions/index";
+import * as actionCreators from "../../store/actions";
 import classes from "./Trending.css";
-import TrendingLabel from "../../../../components/UI/TrendingLabel/TrendingLabel";
-import ReadMoreButton from "../../../../components/UI/ReadMoreButton/ReadMoreButton";
-import Video from "../../../../components/UI/Video/Video";
+import TrendingLabel from "..//UI/TrendingLabel/TrendingLabel";
+import ReadMoreButton from "../UI/ReadMoreButton/ReadMoreButton";
+import Video from "../UI/Video/Video";
 class Trending extends Component {
   componentDidMount() {
     this.props.onFetchArticles();

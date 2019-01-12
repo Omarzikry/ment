@@ -1,0 +1,34 @@
+.blogFeaturedGrid {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "trending trending verticalFeatured" "featuredLeft featuredRight verticalFeatured";
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+.trending {
+  grid-area: trending;
+  background-color: red;
+  min-height: 300px;
+}
+
+.featuredLeft {
+  grid-area: featuredLeft;
+  background-color: black;
+  min-height: 300px;
+}
+
+.featuredRight {
+  grid-area: featuredRight;
+  background-color: salmon;
+  min-height: 300px;
+}
+
+.verticalFeatured {
+  grid-area: verticalFeatured;
+  background-color: seagreen;
+  min-height: 300px;
+}

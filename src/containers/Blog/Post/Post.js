@@ -5,7 +5,7 @@ import axios from "../../../axios";
 import Spinner from "../../../components/UI/Spinner/Spinner";
 import BlogSlider from "./Slider/Slider";
 import MidSection from "./MidSection/MidSection";
-import Trending from "./Trending/Trending";
+import Trending from "../../../components/Trending/Trending";
 import MovingColors from "../../../components/UI/MovingColors/MovingColors";
 import EndSection from "./EndSection/EndSection";
 import SimilarPosts from "../../../components/SimilarPosts/SimilarPosts";

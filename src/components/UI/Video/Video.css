@@ -105,11 +105,17 @@
   position: absolute;
   transition: all 0.5s ease;
 }
+
 .notActive {
   transform: translateX(-100%);
   opacity: 0;
 }
+
 .activeMedia {
   transform: translateX(0%) !important;
   opacity: 1 !important;
+}
+
+.videoSmall {
+  transform: scale(0.6) !important;
 }
