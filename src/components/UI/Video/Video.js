@@ -84,7 +84,6 @@ class Video extends Component {
               onEnded={this.videoEndedHanlder}
               poster={poster}
               ref={this.video}
-              muted
               className={[video, externalClass].join(" ")}
               id="video"
             >

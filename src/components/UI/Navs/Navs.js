@@ -23,10 +23,11 @@ class Navs extends Component {
   };
 
   render() {
+    const { activeLink } = this.state;
     return (
       <div className={classes.navs}>
         <NavsLinks callbackFromParent={this.myCallback} />
-        <NavsTabs active={this.state.activeLink} />
+        <NavsTabs active={activeLink} key={activeLink} />
         <ExploreBtn click={this.clickHandler}>Explore more</ExploreBtn>
       </div>
     );
