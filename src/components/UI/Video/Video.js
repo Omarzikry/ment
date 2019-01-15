@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import classes from "./Video.css";
 import Spinner from "../Spinner/Spinner";
 class Video extends Component {
@@ -74,7 +74,7 @@ class Video extends Component {
       );
     }
     return (
-      <div>
+      <Fragment>
         {!loading ? (
           <div
             className={[videoContainer, externalClass].join(" ")}
@@ -115,7 +115,7 @@ class Video extends Component {
         ) : (
           <Spinner />
         )}
-      </div>
+      </Fragment>
     );
   }
 }

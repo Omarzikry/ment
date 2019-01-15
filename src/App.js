@@ -25,7 +25,7 @@ class App extends Component {
                       <Carousel auto={true} />
                       <Navs history={history} />
                       <SimilarPosts history={history} title="Our Stories" />
-                      <BlogFeaturedGrid />
+                      <BlogFeaturedGrid history={history} />
                     </Fragment>
                   );
                 }}

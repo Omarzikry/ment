@@ -12,11 +12,13 @@ class SimilarPosts extends Component {
     this.props.history.push("/blog/" + id);
   };
   render() {
+    const { articles } = this.props;
+    const slicedArticles = articles.slice(0, 3);
     return (
       <Fragment>
         <h2 className={classes.title}>{this.props.title}</h2>
         <div className={classes.cardContainer}>
-          {this.props.articles.map(article => {
+          {slicedArticles.map(article => {
             const articleMedia = article.media.slice(0, 1);
             return (
               <div key={article.id} className={classes.card}>
