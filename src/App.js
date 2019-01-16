@@ -13,25 +13,34 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Layout>
-            <Switch>
-              <Route path="/blog" component={Blog} />
-              <Route
-                path="/"
-                exact
-                render={({ history }) => {
-                  return (
-                    <Fragment>
-                      <Carousel auto={true} />
-                      <Navs history={history} />
-                      <SimilarPosts history={history} title="Our Stories" />
-                      <BlogFeaturedGrid history={history} />
-                    </Fragment>
-                  );
-                }}
-              />
-            </Switch>
-          </Layout>
+          <Route
+            render={({ history }) => {
+              return (
+                <Layout history={history}>
+                  <Switch>
+                    <Route path="/blog" component={Blog} />
+                    <Route
+                      path="/"
+                      exact
+                      render={({ history }) => {
+                        return (
+                          <Fragment>
+                            <Carousel auto={true} />
+                            <Navs history={history} />
+                            <SimilarPosts
+                              history={history}
+                              title="Our Stories"
+                            />
+                            <BlogFeaturedGrid history={history} />
+                          </Fragment>
+                        );
+                      }}
+                    />
+                  </Switch>
+                </Layout>
+              );
+            }}
+          />
         </div>
       </BrowserRouter>
     );

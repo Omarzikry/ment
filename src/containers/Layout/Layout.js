@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 const Layout = props => {
   return (
     <Fragment>
-      <Navbar />
+      <Navbar history={props.history} />
       {props.children}
       <Footer />
     </Fragment>

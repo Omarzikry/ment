@@ -1,43 +1,117 @@
-.Navbar{
-    width: 100%;
-    height: 30px;
-}
-.Navbar nav{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 50px 0;
-}
-.Navbar ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-.logo{
-    height: 100%;
-}
-.logo img{
-    width: 80px;
-    position: absolute;
-    left: 46%;
-    top: 55px;
-}
-.leftNav{
-    margin-left: 2em;
-}
-.rightNav{
-    margin-right: 1em;
+.Navbar {
+  width: 100%;
+  height: 30px;
 }
 
-@media only screen and (max-width: 768px){
-    .logo img{
-        left: 40%;
-    }
-    .leftNav{
-        display: none !important;
-    }
+.Navbar nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 50px 0;
+}
+
+.Navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo img {
+  width: 80px;
+  position: absolute;
+  left: 46%;
+  top: 55px;
+}
+
+.leftNav {
+  margin-left: 2em;
+  transition: all 0.4s ease;
+}
+
+.leftNavBlog {
+  margin-left: 2em;
+  transition: all 0.4s ease;
+  position: fixed;
+  left: -100%;
+  top: 0%;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: linear-gradient(-135deg, #b4d3d3, #d9e7e7);
+  flex-direction: column;
+  margin: 0;
+}
+
+.rightNav {
+  margin-right: 1em;
+  z-index: 999;
+}
+
+.toggleBtn {
+  display: none;
+}
+
+.toggleBtnBlog {
+  display: block;
+  position: relative !important;
+  left: 0 !important;
+  top: -4px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo img {
+    left: 40%;
+  }
+  .leftNav {
+    position: fixed;
+    left: -100%;
+    top: 0%;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: linear-gradient(-135deg, #b4d3d3, #d9e7e7);
+    flex-direction: column;
+    margin: 0;
+  }
+  .toggleBtn {
+    display: block;
+    z-index: 999;
+    height: 15px !important;
+    position: fixed !important;
+    top: 1em;
+    left: 1em;
+  }
+}
+
+.navOpened {
+  left: 0%;
+}
+
+.navOpened a {
+  font-size: 3em;
+  padding: 0.5em 0;
+  display: block;
+}
+
+/*=============== search ==============*/
+
+.search {
+  border: none;
+  border-left: 1px solid #b4d3d3;
+  padding-left: 2em;
+  background-color: transparent;
+}
+
+.search:focus {
+  outline: 0;
 }
