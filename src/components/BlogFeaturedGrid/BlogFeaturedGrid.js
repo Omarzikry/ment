@@ -4,6 +4,8 @@ import axios from "../../axios";
 import Spinner from "../UI/Spinner/Spinner";
 import Video from "../UI/Video/Video";
 import TrendingLabel from "../UI/TrendingLabel/TrendingLabel";
+import { handleDate } from "../../utils";
+
 class BlogFeaturedGrid extends Component {
   state = {
     loading: true
@@ -46,30 +48,26 @@ class BlogFeaturedGrid extends Component {
         // ============= Get one article from articles array then return its jsx ============= //
         const singleMedia = article.media.slice(0, 1);
         const showOneMedia = singleMedia.map(mediaFile => {
-            return mediaFile.includes(".mp4") ? (
-              <Video
-                mediaFile={mediaFile}
-                poster={article.poster}
-                key={article.id + mediaFile}
-              />
-            ) : (
-              <img
-                src={mediaFile}
-                alt={article.title}
-                key={article.id + mediaFile}
-              />
-            );
-          }),
-          date = new Date(+article.createdDate),
-          year = date.getFullYear(),
-          month = date.getMonth() + 1,
-          day = date.getDay(),
-          title = (
-            <div>
-              <p className={classes.title}>{article.title}</p>
-              <p className={classes.date}>{day + "/" + month + "/" + year}</p>
-            </div>
+          return mediaFile.includes(".mp4") ? (
+            <Video
+              mediaFile={mediaFile}
+              poster={article.poster}
+              key={article.id + mediaFile}
+            />
+          ) : (
+            <img
+              src={mediaFile}
+              alt={article.title}
+              key={article.id + mediaFile}
+            />
           );
+        });
+        const title = (
+          <div>
+            <p className={classes.title}>{article.title}</p>
+            <p className={classes.date}>{handleDate(article.createdDate)}</p>
+          </div>
+        );
 
         // ============= featured article 1 ============= //
 
@@ -146,7 +144,9 @@ class BlogFeaturedGrid extends Component {
               })}
               <div className={classes.trendingOverlay}>
                 <p className={classes.trendingTitle}>{article.title}</p>
-                <p className={classes.date}>{day + "/" + month + "/" + year}</p>
+                <p className={classes.date}>
+                  {handleDate(article.createdDate)}
+                </p>
               </div>
               <TrendingLabel right="10px" top="10px" />
             </div>

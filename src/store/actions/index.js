@@ -1,3 +1,1 @@
-export {
-    fetchArticles
-} from './Blog';
+export { fetchArticles } from "./Blog";

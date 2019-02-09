@@ -19,6 +19,13 @@ class Navbar extends Component {
   };
 
   render() {
+    if (this.state.navOpened) {
+      document.documentElement.style.overflow = "hidden"; // firefox, chrome
+      document.body.scroll = "no"; // ie only
+    } else {
+      document.documentElement.style.overflow = "auto"; // firefox, chrome
+      document.body.scroll = "yes"; // ie only
+    }
     let navBar = (
       <header className={classes.Navbar}>
         <nav>
@@ -69,7 +76,7 @@ class Navbar extends Component {
             <ul
               className={[
                 classes.leftNavBlog,
-                this.state.navOpened ? classes.navOpened : null
+                this.state.navOpened ? classes.navOpenedBlog : null
               ].join(" ")}
             >
               <li>
@@ -86,7 +93,7 @@ class Navbar extends Component {
               <img src={LogoImg} alt="Ment logo" />
             </div>
             <ul className={classes.rightNav}>
-              <li>
+              {/* <li>
                 <form>
                   <input
                     type="text"
@@ -95,7 +102,7 @@ class Navbar extends Component {
                   />
                   <i className="fas fa-search" />
                 </form>
-              </li>
+              </li> */}
               <li>
                 <ToggleBtn
                   extraStyles={classes.toggleBtnBlog}

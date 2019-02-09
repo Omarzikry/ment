@@ -1,9 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import * as actionCreators from "../../store/actions/index";
 import Spinner from "../../components/UI/Spinner/Spinner";
 import Post from "./Post/Post";
 import { Route, Switch } from "react-router-dom";
+import FeaturdNews from "../../components/FeaturedNews/FeaturedNews";
+import BlogPostsGrid from "../../components/BlogPostsGrid/BlogPostsGrid";
 class Blog extends Component {
   componentDidMount() {
     this.props.onFetchArticles();
@@ -20,6 +22,7 @@ class Blog extends Component {
 
   render() {
     let posts = <Spinner />;
+    const { articles, loading } = this.props;
 
     if (!this.props.loading) {
       posts = this.props.articles.map(article => {
@@ -40,7 +43,12 @@ class Blog extends Component {
         <Route
           path="/blog"
           render={() => {
-            return <div style={this.style}>{posts}</div>;
+            return (
+              <Fragment>
+                <FeaturdNews articles={articles} loading={loading} />
+                <BlogPostsGrid articles={articles} loading={loading} />
+              </Fragment>
+            );
           }}
         />
       </Switch>
@@ -50,7 +58,8 @@ class Blog extends Component {
 
 const mapStateToProps = state => {
   return {
-    articles: state.articles
+    articles: state.articles,
+    loading: state.loading
   };
 };
 const mapDispatchToProps = dispatch => {

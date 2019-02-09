@@ -1,0 +1,59 @@
+.vertical {
+    grid-area: verticalGrid;
+    background-color: wheat;
+    min-height: 300px;
+    overflow: hidden !important;
+}
+
+.smallItem {
+    grid-area: small;
+    background-color: aqua;
+    min-height: 100px;
+    min-width: 100px;
+    border: 1px solid salmon;
+}
+
+.small1 {
+    grid-area: small1;
+}
+
+.small2 {
+    grid-area: small2;
+}
+
+.small3 {
+    grid-area: small3;
+}
+
+.small4 {
+    grid-area: small4;
+}
+
+.BlogPostsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "verticalGrid small1" "verticalGrid small2" "verticalGrid small3" "verticalGrid small4";
+    width: 50%;
+    margin-left: auto;
+    grid-gap: 3em;
+    padding-top: 6em;
+    padding-right: 4%;
+}
+
+.content {
+    width: 100% !important;
+    object-fit: cover !important;
+    position: relative;
+    height: 100% !important;
+}
+
+.videoContainer {
+    height: 80%;
+}
+
+.articleTitle {
+    font-family: Poppins, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}

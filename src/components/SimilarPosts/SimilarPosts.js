@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import * as actionCreators from "../../store/actions/index";
 import classes from "./SimilarPosts.css";
 import Video from "../UI/Video/Video";
+import { handleDate } from "../../utils";
+
 class SimilarPosts extends Component {
   componentDidMount() {
     this.props.onFetchArticles();
@@ -52,7 +54,9 @@ class SimilarPosts extends Component {
                   >
                     {article.title}
                   </p>
-                  <p className={classes.date}>8 March, 2020</p>
+                  <p className={classes.date}>
+                    {handleDate(article.createdDate)}
+                  </p>
                 </div>
               </div>
             );
