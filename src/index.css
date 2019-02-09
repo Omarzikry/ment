@@ -10,3 +10,20 @@ body {
 html {
     font-size: 15px
 }
+
+video[poster] {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 10px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 9px
+    }
+}

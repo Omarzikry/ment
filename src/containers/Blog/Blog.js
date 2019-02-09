@@ -22,7 +22,7 @@ class Blog extends Component {
 
   render() {
     let posts = <Spinner />;
-    const { articles, loading } = this.props;
+    const { articles, loading, history } = this.props;
 
     if (!this.props.loading) {
       posts = this.props.articles.map(article => {
@@ -46,7 +46,11 @@ class Blog extends Component {
             return (
               <Fragment>
                 <FeaturdNews articles={articles} loading={loading} />
-                <BlogPostsGrid articles={articles} loading={loading} />
+                <BlogPostsGrid
+                  articles={articles}
+                  loading={loading}
+                  history={history}
+                />
               </Fragment>
             );
           }}

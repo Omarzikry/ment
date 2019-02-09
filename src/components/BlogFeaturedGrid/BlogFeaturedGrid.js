@@ -62,7 +62,8 @@ class BlogFeaturedGrid extends Component {
             />
           );
         });
-        const title = (
+
+        let title = (
           <div>
             <p className={classes.title}>{article.title}</p>
             <p className={classes.date}>{handleDate(article.createdDate)}</p>

@@ -1,23 +1,63 @@
 .vertical {
     grid-area: verticalGrid;
-    background-color: wheat;
-    min-height: 300px;
+    min-height: 20em;
     overflow: hidden !important;
 }
 
 .smallItem {
     grid-area: small;
-    background-color: aqua;
-    min-height: 100px;
     min-width: 100px;
-    border: 1px solid salmon;
+    height: 6.7em;
+    overflow: hidden;
+    margin: 2em 0;
+    width: 100%;
+    display: flex;
+    position: relative;
 }
 
-.small1 {
+.smallItem:first-child {
+    margin-top: 0;
+}
+
+.smallItem:last-child {
+    margin-bottom: 0;
+}
+
+.smallItem img {
+    height: 100%;
+    width: 35% !important;
+}
+
+.smallVideo {
+    width: 35%;
+    position: relative;
+    height: 100% !important;
+}
+
+/* .small1 {
     grid-area: small1;
+} */
+
+.smallArticleGrid {
+    grid-area: small1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.small2 {
+.textSmall {
+    width: 60%;
+    height: 100%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.textSmall .date {
+    left: 40%;
+}
+
+/* .small2 {
     grid-area: small2;
 }
 
@@ -27,13 +67,13 @@
 
 .small4 {
     grid-area: small4;
-}
+} */
 
 .BlogPostsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "verticalGrid small1" "verticalGrid small2" "verticalGrid small3" "verticalGrid small4";
+    grid-template-areas: "verticalGrid small1" "verticalGrid small1" "verticalGrid small1" "verticalGrid small1";
     width: 50%;
     margin-left: auto;
     grid-gap: 3em;
@@ -56,4 +96,40 @@
     font-family: Poppins, sans-serif;
     font-size: 1.3rem;
     font-weight: 500;
+    margin-top: 0;
+}
+
+.text {
+    position: relative;
+    height: 20%;
+    box-sizing: border-box;
+    width: 90%;
+    cursor: pointer;
+}
+
+.date {
+    color: #77777e;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    font-family: Nunito, sans-serif;
+    margin: 0px;
+}
+
+.text h2,
+.textSmall h2 {
+    transition: color 0.4s ease;
+}
+
+.text:hover h2,
+.textSmall:hover h2 {
+    color: #87bbbc;
+}
+
+@media only screen and (max-width: 800px) {
+    .BlogPostsGrid {
+        width: 100%;
+        margin-top: 7em;
+    }
 }

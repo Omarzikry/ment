@@ -65,12 +65,15 @@
     letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 768px) {
-    .title {
+@media only screen and (max-width: 800px) {
+    /* .title {
         font-size: 20px;
     }
     .title div:after {
         height: 3px;
         top: 12px;
+    } */
+    .featuredNews {
+        display: none
     }
 }
