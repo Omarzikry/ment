@@ -1,0 +1,45 @@
+.trending {
+  width: 50%;
+  height: 30em;
+  overflow: hidden;
+  margin: 3em 0em;
+  margin-left: auto;
+  margin-right: 4%;
+  position: relative;
+  cursor: pointer;
+}
+
+.trending img {
+  object-fit: cover;
+  height: 80%;
+  width: 100%;
+}
+
+.date {
+  color: #77777e;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  font-family: Nunito, sans-serif;
+  margin: 0px;
+}
+
+.articleTitle {
+  font-family: Poppins, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 1em;
+  transition: color 0.4s ease;
+}
+
+.trending:hover .articleTitle {
+  color: #87bbbc;
+}
+
+@media only screen and (max-width: 800px) {
+  .trending {
+    width: 90%;
+    margin: 3em auto;
+  }
+}

@@ -13,3 +13,11 @@ export const handleDate = createdDate => {
     day = date.getDay();
   return `${day}/${month}/${year}`;
 };
+
+// ========== Get trending post ======= //
+export const getFileExtention = fileName => {
+  let fileExtension;
+  const recievedFileName = fileName;
+  fileExtension = recievedFileName.replace(/^.*\./, "");
+  return fileExtension;
+};

@@ -1,37 +1,37 @@
 .vertical {
-    grid-area: verticalGrid;
-    min-height: 20em;
-    overflow: hidden !important;
+  grid-area: verticalGrid;
+  min-height: 20em;
+  overflow: hidden !important;
 }
 
 .smallItem {
-    grid-area: small;
-    min-width: 100px;
-    height: 6.7em;
-    overflow: hidden;
-    margin: 2em 0;
-    width: 100%;
-    display: flex;
-    position: relative;
+  grid-area: small;
+  min-width: 100px;
+  height: 6.7em;
+  overflow: hidden;
+  margin: 2em 0;
+  width: 100%;
+  display: flex;
+  position: relative;
 }
 
 .smallItem:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .smallItem:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .smallItem img {
-    height: 100%;
-    width: 35% !important;
+  height: 100%;
+  width: 35% !important;
 }
 
 .smallVideo {
-    width: 35%;
-    position: relative;
-    height: 100% !important;
+  width: 35%;
+  position: relative;
+  height: 100% !important;
 }
 
 /* .small1 {
@@ -39,22 +39,22 @@
 } */
 
 .smallArticleGrid {
-    grid-area: small1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  grid-area: small1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .textSmall {
-    width: 60%;
-    height: 100%;
-    margin-left: 5%;
-    cursor: pointer;
+  width: 60%;
+  height: 100%;
+  margin-left: 5%;
+  cursor: pointer;
 }
 
 .textSmall .date {
-    left: 40%;
+  left: 40%;
 }
 
 /* .small2 {
@@ -70,66 +70,66 @@
 } */
 
 .BlogPostsGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "verticalGrid small1" "verticalGrid small1" "verticalGrid small1" "verticalGrid small1";
-    width: 50%;
-    margin-left: auto;
-    grid-gap: 3em;
-    padding-top: 6em;
-    padding-right: 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "verticalGrid small1" "verticalGrid small1" "verticalGrid small1" "verticalGrid small1";
+  width: 50%;
+  margin-left: auto;
+  grid-gap: 3em;
+  padding-top: 6em;
+  padding-right: 4%;
 }
 
 .content {
-    width: 100% !important;
-    object-fit: cover !important;
-    position: relative;
-    height: 100% !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  position: relative;
+  height: 100% !important;
 }
 
 .videoContainer {
-    height: 80%;
+  height: 80%;
 }
 
 .articleTitle {
-    font-family: Poppins, sans-serif;
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-top: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 0;
 }
 
 .text {
-    position: relative;
-    height: 20%;
-    box-sizing: border-box;
-    width: 90%;
-    cursor: pointer;
+  position: relative;
+  height: 20%;
+  box-sizing: border-box;
+  width: 90%;
+  cursor: pointer;
 }
 
 .date {
-    color: #77777e;
-    font-size: 12px;
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    font-family: Nunito, sans-serif;
-    margin: 0px;
+  color: #77777e;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  font-family: Nunito, sans-serif;
+  margin: 0px;
 }
 
 .text h2,
 .textSmall h2 {
-    transition: color 0.4s ease;
+  transition: color 0.4s ease;
 }
 
 .text:hover h2,
 .textSmall:hover h2 {
-    color: #87bbbc;
+  color: #87bbbc;
 }
 
 @media only screen and (max-width: 800px) {
-    .BlogPostsGrid {
-        width: 100%;
-        margin-top: 7em;
-    }
+  .BlogPostsGrid {
+    width: 90%;
+    margin-top: 7em;
+  }
 }

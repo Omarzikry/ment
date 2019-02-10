@@ -5,6 +5,7 @@ import classes from "./Trending.css";
 import TrendingLabel from "..//UI/TrendingLabel/TrendingLabel";
 import ReadMoreButton from "../UI/ReadMoreButton/ReadMoreButton";
 import Video from "../UI/Video/Video";
+import { getFileExtention } from "../../utils";
 class Trending extends Component {
   componentDidMount() {
     this.props.onFetchArticles();

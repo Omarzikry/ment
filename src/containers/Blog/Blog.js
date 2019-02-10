@@ -6,6 +6,7 @@ import Post from "./Post/Post";
 import { Route, Switch } from "react-router-dom";
 import FeaturdNews from "../../components/FeaturedNews/FeaturedNews";
 import BlogPostsGrid from "../../components/BlogPostsGrid/BlogPostsGrid";
+import BlogTrending from "../../components/BlogTrending/BlogTrending";
 class Blog extends Component {
   componentDidMount() {
     this.props.onFetchArticles();
@@ -47,6 +48,11 @@ class Blog extends Component {
               <Fragment>
                 <FeaturdNews articles={articles} loading={loading} />
                 <BlogPostsGrid
+                  articles={articles}
+                  loading={loading}
+                  history={history}
+                />
+                <BlogTrending
                   articles={articles}
                   loading={loading}
                   history={history}
